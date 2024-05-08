@@ -14,12 +14,12 @@
       font-size: 1rem;
     }
     100% {
-      transform: scale(1);
+      transform: scale(0.6);
       font-size: 1.5rem;
     }
   }
 .bigger-text {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 * {
     user-select: none;
@@ -46,13 +46,7 @@ body {
     height: 100vh;
     position: relative;
     
-    -moz-transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-    transform-origin: top left;
-    width: 125%;
-    overflow-x: hidden;
-
+    
 }
 ::-webkit-scrollbar {
     width: 8px;
@@ -75,7 +69,9 @@ body {
     }
 }
 
-
+.titol{
+    font-size: 80%;
+}
 
 .custom-titles {
     padding-bottom: 10px;
@@ -145,23 +141,37 @@ body {
 .quick-links ul {
     line-height: 3;
 }
-
+.customlinka{
+    font-size:85%;
+    margin-top: 8px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 12px;
+}
 .container {
     position: relative;
     z-index: 2;
 }
 
-
+.custombuttonsize{
+    font-size: 90%;
+}
 .navbar {
+    padding: 2px;
+    padding-bottom: 4px;
     position: fixed;
     z-index: 3;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     width: 100%;
     margin-bottom: 100px;
+
 }
 
 .navbar-brand img {
-    max-height: 40px;
+    padding: 0%;
+    
+    padding-left: 0px;
+    max-height:26px;
 }
 
 
@@ -185,7 +195,7 @@ header .container {
 
 
 .footer {
-  
+    font-size: 80%;
     bottom: 0;
     width: 100%;
     background-color: #333;
@@ -228,56 +238,61 @@ a:focus { text-decoration: underline; }
     }
     100% {
         transform: scale(1);
-        font-size: 1.5rem;
+        font-size: 1rem;
         opacity: 1;
     }
 }
 
 @keyframes zoombuttonIn {
     0% {
-        transform: scale(1);
+        transform: scale(0.8);
         opacity: 0;
         font-size: 1.3rem;
     }
     100% {
-        transform: scale(1);
+        transform: scale(0.8);
         font-size: 1.3rem;
         opacity: 1;
     }
 }
 
 .zoom-in {
-    font-size: 1rem;
-    transform: scale(0.5);
+ 
+ 
     opacity: 0;
     transition: transform 0.5s cubic-bezier(0.5, 0, 0.1, 1), opacity 0.5s cubic-bezier(0.5, 0, 0.1, 1);
 }
 
 .zoom-in.loaded {
-    transform: scale(1);
-    font-size: 1.5rem;
+
+
     opacity: 1;
 }
 
 .aboutmoew {
+
     animation-delay: 1s;
 }
 
 .paragraphmeow {
+
     animation: zoomIn 0.40s ease forwards;
     animation-delay: 0.5s;
 }
 
 .paragraphmeoww {
+
     animation: zoomIn 0.40s ease forwards;
     animation-delay: 1s;
 }
 .paragraphmeowww {
+
     animation: zoomIn 0.40s ease forwards;
     animation-delay: 2s;
 }
 
 .buttonmeow {
+
     animation: zoombuttonIn 4s ease forwards;
    
     
@@ -288,6 +303,7 @@ a:focus { text-decoration: underline; }
 }
 
 .title-fade-in-1 {
+
     opacity: 0;
     animation: fadeInFromTop 0.75s ease forwards;
     animation-delay: 2s;
