@@ -1,19 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    
-    const titleElements = document.querySelectorAll('.title-fade-in');
-    const titleFadeInObserver = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !entry.target.classList.contains('active')) {
-                entry.target.classList.add('active');
-            }
-        });
-    });
-    titleElements.forEach(element => {
-        titleFadeInObserver.observe(element);
-    });
 
-  
-    
     let lastScrollTop = 0;
     window.addEventListener("scroll", function() {
         let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
@@ -28,6 +13,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
     }, false);
-});
 
 
