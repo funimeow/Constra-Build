@@ -39,7 +39,7 @@
 body {
     margin: 0;
     font-family: 'Copenhagen Grotesk Nova', sans-serif;
-    font-size: 80%;
+    font-size: 100%;
     
     background-size: cover;
     background-position: center;
@@ -136,10 +136,10 @@ body {
 
 .quick-links ul li,
 .quick-links p {
-    line-height: 3; /* Adjust the value as needed */
+    line-height: 2; /* Adjust the value as needed */
     margin-right: 30px;
     list-style: none;
-    margin-bottom: 10px;
+
 }
 
 .quick-links ul {
