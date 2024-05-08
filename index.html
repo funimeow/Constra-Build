@@ -8,13 +8,14 @@
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="script.js"></script>
     <style>
      
  
 
         .fade-in {
             opacity: 0;
-            transition: opacity 0.5s ease;
+            transition: opacity 0.25s ease;
         }
 
         .fade-in.active {
@@ -74,8 +75,12 @@
     </nav>
 
     <style>
+        .margincustomo{
+            margin-bottom: 5px;
+
+        }
         .marginpara{
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
         .custom-bg-gray {
             background-color: #e9ecef; 
@@ -85,18 +90,20 @@
         }
     </style>
     
-    <header id="home" class="container-fluid custom-bg-gray text-dark py-4 position-relative">
+    <header id="home" class="container-fluid custom-bg-gray text-dark py-4 position-relative custom-rounded">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto text-center fade-in">
                     <h1 class="display-6 fs-2 title-fade-in custom-titles titol">Welcome to ConstraBuild</h1>
-                    <p class="slotholder-text mt-3 fs-6 zoom-in paragraphmeow">At ConstraBuild, we are dedicated to providing superior quality construction <br>  services and products since the 2000s.</p>
+                    <p class="slotholder-text mt-3 mb-0 fs-6 zoom-in paragraphmeow margincustomo">At ConstraBuild, we are dedicated to providing superior quality construction</p>
+                    <p class="slotholder-text  fs-6 zoom-in paragraphmeow margincustomo">services and products since the 2000s.</p>
+
                     <a href="portfolio.html" style="border-color: #282f48;"class="btn btn-primary btn-lg mt-4 custom-bg-white buttonnmeow">Explore Our Projects</a>
                 </div>
             </div>
         </div>
         <!-- Image placed in the bottom right -->
-        <img src="images/littleicon.png"  class="position-absolute bottom-0 end-0 mb-0.2" alt="Image" style="max-width: 500px; opacity:0.2;">
+        <img src="images/littleicon.png"  class="position-absolute bottom-0 end-0 mb-0.2" alt="Image" style="max-width: 500px; opacity:0.15;">
     </header>
     
     
@@ -107,7 +114,12 @@
             <div class="row">
                 <div class="col-lg-6 mx-auto text-center">
                     <h2 class="fs-3 mb-10 title-fade-in custom-titles aboutmoew">About Us</h2>
-                    <p class="fs-7 custom-titles zoom-in paragraphmeoww">Our company is dedicated to providing superior quality construction services and products that are contracted, scheduled, executed, and managed to create <br>         maximum value for our clients while maintaining respect for the values and needs of our employees and the community.</p>
+                    <p style="margin-bottom: 0px" class="fs-6  zoom-in paragraphmeoww">Our company is dedicated to providing superior quality construction services and </p>
+                    <p style="margin-bottom: 0px" class="fs-6  zoom-in paragraphmeoww marginpara">products that are contracted, scheduled, executed, and managed to create</p>
+                    <p style="margin-bottom: 0px" class="fs-6  zoom-in paragraphmeoww marginpara">maximum value for our clients while maintaining respect for the values and needs</p>
+                    <p  class="fs-6 custom-titles zoom-in paragraphmeoww marginpara">of our employees and the community.</p>
+
+
                 </div>
             </div>
             <div class="row">
@@ -136,7 +148,10 @@
             <div class="row">
                 <div class="col-lg-6 mx-auto text-center">
                     <h2 class="fs-3 title-fade-in custom-titles aboutmoew">Our Services</h2>
-                    <p class="fs-7 paragraph-fade-in custom-titles zoom-in paragraphmeoww marginpara">Depending on our clientele’s requirements, we propose the best solutions for completing the project in the most efficient way. We prepare and develop budgets, estimates, engineering, procurement, and construction strategies.</p>
+                    <p style="margin-bottom: 0px" class="fs-7 paragraph-fade-in zoom-in paragraphmeoww">Depending on our clientele’s requirements, we propose the best solutions</p>
+                    <p style="margin-bottom:0px; margin-top:0px" class="fs-7 paragraph-fade-in zoom-in paragraphmeoww">for completing the project in the most efficient way. We prepare and develop</p>
+                    <p style="margin-top:0px" class="fs-7 paragraph-fade-in custom-titles zoom-in paragraphmeoww marginpara">budgets, estimates, engineering, procurement, and construction strategies.</p>
+
                 </div>
             </div>
             <div class="row">
@@ -144,6 +159,7 @@
                     <i class="fs-1 fas fa-hammer fa-3x mb-3 fa-custom-color"></i>
                     <h3 class="title-fade-in aboutmoew fs-4">General Contracting</h3>
                     <p class="fs-6 zoom-in paragraphmeoww marginpara">This mode of operation is effective for projects with a well-defined scope. We specialize in general contracting for various types of civil and electro-mechanical works, including high-rise buildings, offices, commercial towers, villas, and military compounds.</p>
+                    
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fs-1 fas fa-cogs fa-3x mb-3 fa-custom-color"></i>
@@ -244,5 +260,6 @@
         });
     </script>
     <script src="script.js"></script>
+    
 </body>
 </html>
