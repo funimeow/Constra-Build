@@ -132,14 +132,14 @@ body {
 
 .quick-links ul li,
 .quick-links p {
-    line-height: 3;
+    line-height: 2;
     margin-right: 30px;
     list-style: none;
 
 }
 
 .quick-links ul {
-    line-height: 3;
+    line-height: 2;
 }
 .customlinka{
     font-size:85%;
@@ -155,6 +155,18 @@ body {
 
 .custombuttonsize{
     font-size: 90%;
+}
+.custom-rounded {
+    border-radius: 20px; /* Adjust the value to change the roundness of corners */
+}
+
+/* Apply rounded corners to specific sections */
+.custom-bg-gray.custom-rounded {
+    border-radius: 20px; /* Adjust the value to change the roundness of corners */
+}
+
+.custom-bg-white.custom-rounded {
+    border-radius: 20px; /* Adjust the value to change the roundness of corners */
 }
 .navbar {
     padding: 2px;
@@ -207,12 +219,18 @@ header .container {
 .section-content p {
     margin-bottom: 20px;
 }
+.custom-bg-gray {
+    background-color: #e9ecef; 
+}
+.custom-bg-white {
+    background-color: #282f48;
+}
 .footer p {
     margin: 0;
 }
 .footer .quick-links a {
     color: #fff;
-    text-decoration-color: #fff;
+    text-decoration: none;
 }
 
 a:visited { text-decoration: underline; }
