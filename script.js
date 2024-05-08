@@ -12,19 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         titleFadeInObserver.observe(element);
     });
 
-    
-    const sectionElements = document.querySelectorAll('section');
-    const sectionFadeInObserver = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !entry.target.classList.contains('active')) {
-                entry.target.classList.add('active');
-            }
-        });
-    });
-    sectionElements.forEach(element => {
-        sectionFadeInObserver.observe(element);
-    });
-
+  
     
     let lastScrollTop = 0;
     window.addEventListener("scroll", function() {
