@@ -136,14 +136,14 @@ body {
 
 .quick-links ul li,
 .quick-links p {
-    line-height: 2; /* Adjust the value as needed */
+    line-height: 2;
     margin-right: 30px;
     list-style: none;
 
 }
 
 .quick-links ul {
-    line-height: 3; /* Adjust the value as needed */
+    line-height: 3;
 }
 
 .container {
