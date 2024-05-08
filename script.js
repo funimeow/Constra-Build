@@ -13,5 +13,4 @@
         }
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
     }, false);
-
-
+ 
