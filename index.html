@@ -240,12 +240,9 @@ budgets, estimates, engineering, procurement, and construction strategies.</p>
     </script>
     <script>
         window.onload = function() {
-            var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-            if (isSafari) {
-                var versionMatch = navigator.userAgent.match(/Version\/(\d+)/);
-                if (versionMatch && parseInt(versionMatch[1]) < 12) {
-                    alert("This website isn't supported on Safari v11 or older.");
-                }
+            var isWebKit = 'WebkitAppearance' in document.documentElement.style;
+            if (isWebKit) {
+                alert("This site may have issues on WebKit-based browsers/Apple browsers (not necessarilly).");
             }
         };
     </script>
