@@ -7,14 +7,64 @@
 
 
 @font-face {
-    font-family: 'Copenhagen Grotesk Nova';
-    src: url('fonts/copenhagen.woff2') format('woff2'),
-         url('fonts/copenhagen.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Inter';
     font-style: normal;
+    font-weight: 400;
+    src: url('fonts/Inter-Regular.ttf') format('truetype');
 }
 
-  
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600; /* Semi-Bold */
+    src: url('fonts/Inter-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    src: url('fonts/Inter-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    src: url('fonts/Inter-Thin.ttf') format('truetype');
+}
+.regular-text {
+    font-family: 'Inter', sans-serif;
+}
+
+.clock-style{
+    line-height: 2;
+}
+.bold-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.semi-bold-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.black-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+}
+
+.thin-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
   @-webkit-keyframes zoomIn {
     0% {
       -webkit-transform: scale(0.5);
@@ -66,7 +116,7 @@
 
 body {
     margin: 0;
-    font-family: 'Copenhagen Grotesk Nova', sans-serif;
+  
     font-size: 100%;
     
     background-size: cover;
