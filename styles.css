@@ -295,7 +295,7 @@ header .container {
     margin: 0;
 }
 .footer .quick-links a {
-    color: #fff;
+    color: rgba(245, 245, 247, 0.72);
     text-decoration: none;
 }
 
@@ -304,7 +304,7 @@ a:visited { text-decoration: underline; }
 a:focus { text-decoration: underline; }
 
 .footer .quick-links a:hover {
-    color: #ccc;
+    color: #fff;
 }
 
 .navbar,
