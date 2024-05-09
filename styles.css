@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 @font-face {
     font-family: 'Copenhagen Grotesk Nova';
@@ -8,13 +15,29 @@
 }
 
   
-  @keyframes zoomIn {
+  @-webkit-keyframes zoomIn {
     0% {
-      transform: scale(0.5);
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
       font-size: 1rem;
     }
     100% {
-      transform: scale(0.6);
+      -webkit-transform: scale(0.6);
+              transform: scale(0.6);
+      font-size: 1.5rem;
+    }
+  }
+
+  
+  @keyframes zoomIn {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      font-size: 1rem;
+    }
+    100% {
+      -webkit-transform: scale(0.6);
+              transform: scale(0.6);
       font-size: 1.5rem;
     }
   }
@@ -22,11 +45,16 @@
     font-size: 1em;
 }
 * {
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .section-content p {
     font-size: 0.8em;
+    -webkit-transition: font-size 0.5s ease;
+    -o-transition: font-size 0.5s ease;
     transition: font-size 0.5s ease;
 }
 
@@ -58,14 +86,29 @@ body {
     border-radius: 4px;
 }
 
-@keyframes fadeInFromTop {
+@-webkit-keyframes fadeInFromTop {
     from {
         opacity: 0;
-        transform: translateY(-50px);
+        -webkit-transform: translateY(-50px);
+                transform: translateY(-50px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+@keyframes fadeInFromTop {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-50px);
+                transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
     }
 }
 
@@ -80,6 +123,8 @@ body {
 
 .section-content p {
     font-size: 0.8em;
+    -webkit-transition: font-size 0.5s ease;
+    -o-transition: font-size 0.5s ease;
     transition: font-size 0.5s ease;
 }
 
@@ -90,10 +135,13 @@ body {
 
 .title-fade-in {
     opacity: 0;
-    animation: fadeInFromTop 0.75s ease forwards;
+    -webkit-animation: fadeInFromTop 0.75s ease forwards;
+            animation: fadeInFromTop 0.75s ease forwards;
 }
 .text-scale {
     font-size: 0.8em;
+    -webkit-transition: font-size 0.5s ease;
+    -o-transition: font-size 0.5s ease;
     transition: font-size 0.5s ease;
 }
 
@@ -105,11 +153,17 @@ body {
     background-color: #555;
 }
 .navbar {
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
     transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .navbar.hidden {
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
 }
 
 
@@ -117,17 +171,29 @@ body {
 
 .bg-white, .bg-dark {
     min-height: 70vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .custom-bg-dark {
     background-color: #222222;
     min-height: 70vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .quick-links ul li,
@@ -245,30 +311,52 @@ a:focus { text-decoration: underline; }
 .header,
 .footer,
 .user-select-none {
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 @keyframes zoomIn {
     0% {
-        transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
         font-size: 1rem;
         opacity: 0;
     }
     100% {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
         font-size: 1rem;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes zoombuttonIn {
+    0% {
+        -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+        opacity: 0;
+        font-size: 1.3rem;
+    }
+    100% {
+        -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+        font-size: 1.3rem;
         opacity: 1;
     }
 }
 
 @keyframes zoombuttonIn {
     0% {
-        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+                transform: scale(0.8);
         opacity: 0;
         font-size: 1.3rem;
     }
     100% {
-        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+                transform: scale(0.8);
         font-size: 1.3rem;
         opacity: 1;
     }
@@ -278,7 +366,11 @@ a:focus { text-decoration: underline; }
  
  
     opacity: 0;
+    -webkit-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.1, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.1, 1);
+    transition: opacity 0.5s cubic-bezier(0.5, 0, 0.1, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.1, 1);
+    -o-transition: transform 0.5s cubic-bezier(0.5, 0, 0.1, 1), opacity 0.5s cubic-bezier(0.5, 0, 0.1, 1);
     transition: transform 0.5s cubic-bezier(0.5, 0, 0.1, 1), opacity 0.5s cubic-bezier(0.5, 0, 0.1, 1);
+    transition: transform 0.5s cubic-bezier(0.5, 0, 0.1, 1), opacity 0.5s cubic-bezier(0.5, 0, 0.1, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.1, 1);
 }
 
 .zoom-in.loaded {
@@ -289,40 +381,56 @@ a:focus { text-decoration: underline; }
 
 .aboutmoew {
 
-    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+
+            animation-delay: 1s;
 }
 
 .paragraphmeow {
 
-    animation: zoomIn 0.40s ease forwards;
-    animation-delay: 0.5s;
+    -webkit-animation: zoomIn 0.40s ease forwards;
+
+            animation: zoomIn 0.40s ease forwards;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
 }
 
 .paragraphmeoww {
 
-    animation: zoomIn 0.40s ease forwards;
-    animation-delay: 1s;
+    -webkit-animation: zoomIn 0.40s ease forwards;
+
+            animation: zoomIn 0.40s ease forwards;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
 }
 .paragraphmeowww {
 
-    animation: zoomIn 0.40s ease forwards;
-    animation-delay: 2s;
+    -webkit-animation: zoomIn 0.40s ease forwards;
+
+            animation: zoomIn 0.40s ease forwards;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
 }
 
 .buttonmeow {
 
-    animation: zoombuttonIn 4s ease forwards;
+    -webkit-animation: zoombuttonIn 4s ease forwards;
+
+            animation: zoombuttonIn 4s ease forwards;
    
     
 }
 .buttonnmeow {
-    animation: zoombuttonIn 1s ease forwards;
+    -webkit-animation: zoombuttonIn 1s ease forwards;
+            animation: zoombuttonIn 1s ease forwards;
    
 }
 
 .title-fade-in-1 {
 
     opacity: 0;
-    animation: fadeInFromTop 0.75s ease forwards;
-    animation-delay: 2s;
+    -webkit-animation: fadeInFromTop 0.75s ease forwards;
+            animation: fadeInFromTop 0.75s ease forwards;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
 }
