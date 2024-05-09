@@ -426,7 +426,7 @@ a:focus { text-decoration: underline; }
    
 }
 .fs-6 {
-    font-size: initial !important; /* Reset font size to its initial value */
+    font-size: 27px; /* Reset font size to its initial value */
 }
 
 
