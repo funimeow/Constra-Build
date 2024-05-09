@@ -238,7 +238,17 @@ budgets, estimates, engineering, procurement, and construction strategies.</p>
             }
         };
     </script>
-    
+    <script>
+        window.onload = function() {
+            var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+            if (isSafari) {
+                var versionMatch = navigator.userAgent.match(/Version\/(\d+)/);
+                if (versionMatch && parseInt(versionMatch[1]) < 12) {
+                    alert("This website isn't supported on Safari v11 or older.");
+                }
+            }
+        };
+    </script>
     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
