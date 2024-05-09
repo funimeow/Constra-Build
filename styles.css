@@ -428,6 +428,8 @@ a:focus { text-decoration: underline; }
 .fs-6 {
     font-size: initial !important; /* Reset font size to its initial value */
 }
+
+
 .title-fade-in-1 {
 
     opacity: 0;
