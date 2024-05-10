@@ -40,7 +40,9 @@
     src: url('fonts/Inter-Black.ttf') format('truetype');
 }
 
-
+.navbar-nav{
+    padding-right: initial;
+}
 .regular-text {
     font-family: 'Inter', sans-serif;
 }
