@@ -178,6 +178,9 @@ body {
     transition: font-size 0.5s ease;
 }
 
+.plineheight{
+    line-height: 2;
+}
 
 .paragraph-visible {
     font-size: 1em;
