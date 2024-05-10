@@ -51,7 +51,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="Logo" height="30">
+                <img src="images/logo-white.png" alt="Logo" height="30">
             </a>
             <button class="navbar-toggler custombuttonsize" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -114,9 +114,9 @@
         <div class="container" style="padding: 277px 0;">
             <div class="row">
                 <div class="col-lg-6 mx-auto text-center fade-in">
-                    <h3 class="display-6 fs-3 title-fade-in custom-titles text-white titol bold-text">Welcome to ConstraBuild</h3>
+                    <h3 class="display-6 fs-1 title-fade-in custom-titles text-white titol bold-text">Welcome to ConstraBuild</h3>
                     <div class="container" style="max-width: 700px; padding-top:7px;">
-                        <p style="word-wrap: break-word;" class=" text-white slotholder-text mt-0 mb-0 fs-6 zoom-in paragraphmeow margincustomo regular-text plineheight">At ConstraBuild, we are dedicated to providing superior quality construction services and products since the 2000s.</p>
+                        <p style="word-wrap: break-word;" class=" text-white slotholder-text mt-0 mb-0 fs-6 zoom-in paragraphmeow margincustomo medium-text plineheight">At ConstraBuild, we are dedicated to providing superior quality construction services and products since the 2000s.</p>
                     </div>
                     <a href="portfolio.html" style="border-color: #282f48;" class="btn btn-primary btn-lg mt-4 custom-bg-white buttonnmeow regular-text">Explore Our Projects</a>
                 </div>
@@ -133,32 +133,7 @@
     <!-- Services Section with Fade-in Animation -->
     <section id="services" class="container-fluid bg-white text-dark py-5 fade-in">
         <div class="container" style="padding: 277px 0;">
-            <div class="row">
-                <div class="col-lg-6 mx-auto text-center">
-                    <h3 class="fs-3 title-fade-in custom-titles aboutmoew bold-text">Our Services</h3>
-                    <div class="container" style="max-width: 700px;">
-                    <p style="margin-bottom: 50px; word-wrap: break-word;" class="fs-7 paragraph-fade-in zoom-in paragraphmeoww regular-text plineheight">Depending on our clientele’s requirements, we propose the best solutions for completing the project in the most efficient way. We prepare and develop budgets, estimates, engineering, procurement, and construction strategies.</p></div>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <i class="fs-1 fas fa-hammer fa-3x mb-3 fa-custom-color"></i>
-                    <h3 class="title-fade-in aboutmoew fs-4 semi-bold-text">General Contracting</h3>
-                    <p class="fs-6 zoom-in paragraphmeoww marginpara regular-text plineheight">This mode of operation is effective for projects with a well-defined scope. We specialize in general contracting for various types of civil and electro-mechanical works, including high-rise buildings, offices, commercial towers, villas, and military compounds.</p>
-                    
-                </div>
-                <div class="col-lg-4">
-                    <i class="fs-1 fas fa-cogs fa-3x mb-3 fa-custom-color"></i>
-                    <h3 class="title-fade-in aboutmoew fs-4 semi-bold-text">Project & Construction Management</h3>
-                    <p class="fs-6 zoom-in paragraphmeoww marginpara regular-text plineheight">Our project and construction management services offer comprehensive oversight and control throughout the project lifecycle. From overall project management to site coordination, we focus on maximizing efficiency and minimizing costs through value engineering and meticulous planning.</p>
-                </div>
-                <div class="col-lg-4">
-                    <i class="fs-1 fas fa-tools fa-3x mb-3 fa-custom-color"></i>
-                    <h3 class="title-fade-in aboutmoew fs-4 semi-bold-text">Renovation</h3>
-                    <p class="fs-6 zoom-in paragraphmeoww marginpara regular-text plineheight">Our renovation services breathe new life into existing structures. Whether it's a residential property or a commercial building, our skilled team transforms spaces with creativity and attention to detail, enhancing both aesthetics and functionality.</p>
-                </div>
-            </div>
+            
         </div>
     </section>
    
@@ -296,6 +271,32 @@
             fadeElements.forEach(element => {
                 fadeInObserver.observe(element);
             });
+        });
+    </script>
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar');
+            var logo = document.querySelector('.navbar-brand img');
+            var homeLink = document.querySelector('.nav-link.customlinka:first-child');
+            var otherLinks = document.querySelectorAll('.nav-link.customlinka:not(:first-child)');
+
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+                logo.src = 'images/logo.png'; // Change to the white logo image
+                homeLink.classList.add('text-black'); // Change home link color to black
+                otherLinks.forEach(link => {
+                    link.classList.remove('text-white');
+                    link.classList.add('text-gray');
+                });
+            } else {
+                navbar.classList.remove('scrolled');
+                logo.src = 'images/logo-white.png'; // Change to the original logo image
+                homeLink.classList.remove('text-black'); // Remove black color from home link
+                otherLinks.forEach(link => {
+                    link.classList.remove('text-gray');
+                    link.classList.add('text-white');
+                });
+            }
         });
     </script>
     <script src="script.js"></script>
