@@ -78,7 +78,9 @@
     }
   }
 
-  
+  .plineheight{
+    line-height: 2;
+  }
   @keyframes zoomIn {
     0% {
       -webkit-transform: scale(0.5);
@@ -178,9 +180,6 @@ body {
     transition: font-size 0.5s ease;
 }
 
-.plineheight{
-    line-height: 2;
-}
 
 .paragraph-visible {
     font-size: 1em;
@@ -302,7 +301,7 @@ body {
     padding: 0%;
     
     padding-left: 0px;
-    max-height:26px;
+    max-height:40px;
 }
 
 
