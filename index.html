@@ -232,15 +232,20 @@
 
     <div class="overlay"></div>
     <script>
-        window.onload = function() {
+        window.addEventListener('DOMContentLoaded', (event) => {
             // Check if page is being reloaded
             if (performance.navigation.type === 1) {
                 // Scroll to the #home section
                 window.location.href = "#home";
-                // Scroll back up fully, including taskbar
-                window.scroll(0, -1000);
+                // Smooth scroll back up to the top
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
             }
-        };
+        });
+        
+        
     </script>
     <script>
         window.onload = function() {
