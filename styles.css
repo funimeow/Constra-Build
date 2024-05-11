@@ -487,9 +487,7 @@ header .container {
    
     
 }
-.no-hover:hover {
-    color: inherit; /* This will make the link keep its color on hover */
-}
+
 .buttonnmeow {
     -webkit-animation: zoombuttonIn 1s ease forwards;
             animation: zoombuttonIn 1s ease forwards;
