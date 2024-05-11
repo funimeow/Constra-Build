@@ -223,11 +223,6 @@ body {
     transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-.navbar.hidden {
-    -webkit-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-            transform: translateY(-100%);
-}
 
 
 
@@ -301,8 +296,7 @@ body {
 }
 .navbar {
     border-bottom: none !important;
-    padding: 2px;
-    padding-bottom: 4px;
+    
     position: fixed;
     z-index: 3;
 
@@ -365,7 +359,7 @@ header .container {
     text-decoration: none;
 }
 .text-white-custom{
-    color:#DCDCDC
+    color:#DCDCDC !important
 }
 
 .footer .quick-links a:hover {
@@ -374,9 +368,11 @@ header .container {
 .navbar.scrolled {
     background-color: white !important;
 }
-
+.active-link {
+    color: #ffffff !important;
+}
 .navbar.scrolled .nav-link {
-    color: #282f48 !important; /* Change the color to gray/black */
+    color: #000!important; /* Change the color to gray/black */
 }
 .navbar,
 .header,
@@ -490,6 +486,9 @@ header .container {
             animation: zoombuttonIn 4s ease forwards;
    
     
+}
+.no-hover:hover {
+    color: inherit; /* This will make the link keep its color on hover */
 }
 .buttonnmeow {
     -webkit-animation: zoombuttonIn 1s ease forwards;
