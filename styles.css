@@ -498,7 +498,11 @@ header .container {
 .fs-6 {
     font-size: 27px; /* Reset font size to its initial value */
 }
-
+@media (min-width: 992px) {
+    .navbar-brand-width {
+        margin-top:16px !important;
+    }
+}
 
 .title-fade-in-1 {
 
