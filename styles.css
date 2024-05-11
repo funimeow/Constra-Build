@@ -301,7 +301,7 @@ body {
     z-index: 3;
 
     width: 100%;
-    margin-bottom: 100px;
+  
 
 }
 
@@ -498,9 +498,16 @@ header .container {
 .fs-6 {
     font-size: 27px; /* Reset font size to its initial value */
 }
-@media (min-width: 992px) {
+
     .navbar-brand-width {
-        margin-top:16px !important;
+        margin-top:16.5px !important;
+        margin-left:10px !important
+    }
+
+
+@media (max-width: 991.5px) {
+    .navbar {
+        padding: 16.5px !important;
     }
 }
 
