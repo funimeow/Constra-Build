@@ -517,3 +517,48 @@ header .container {
     -webkit-animation-delay: 2s;
             animation-delay: 2s;
 }
+
+/* Move the additional hamburger button to the right */
+#additionalLinksBtn {
+    right: 0;
+    margin-right: 20px !important;
+    position: absolute;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    right: -250px; /* Start position of the sidebar (off-screen) */
+    top: 0;
+    height: 100%;
+    width: 250px; /* Adjust the width as needed */
+    background-color: #fff;
+    z-index: 1000;
+    transition: right 0.3s ease; /* Transition effect for smooth sliding */
+}
+
+.sidebar.active {
+    right: 0; /* Slide the sidebar into view */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hide the additional links button on small screens */
+@media (max-width: 991.98px) {
+    #additionalLinksBtn {
+        display: none;
+    }
+}
