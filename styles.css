@@ -211,7 +211,10 @@ body {
 .text-scale:hover {
     font-size: 1em;
 }
-
+.navbar-nav .nav-link.customlinka:hover,
+.navbar-nav .nav-link.customlinka:focus {
+    color: #CCCCCC !important; /* Change to the desired hover color */
+}
 ::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
@@ -364,8 +367,8 @@ header .container {
     color: rgba(245, 245, 247, 0.72);
     text-decoration: none;
 }
-.text-white-active{
-    color:#CCCCCC
+.text-white-custom{
+    color:#DCDCDC
 }
 
 .footer .quick-links a:hover {
