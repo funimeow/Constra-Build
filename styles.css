@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 @font-face {
     font-family: 'Inter';
@@ -281,9 +288,7 @@ body {
 .custombuttonsize{
     font-size: 90%;
 }
-.footer a:active {
-    outline: none; /* Remove the default focus outline */
-}
+
 
 
 /* Apply rounded corners to specific sections */
@@ -296,6 +301,8 @@ body {
 }
 .navbar.white-bg {
     background-color: white !important;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
 }
 .navbar {
@@ -358,6 +365,7 @@ header .container {
 .footer p {
     margin: 0;
 }
+
 .footer .quick-links a {
     color: rgba(245, 245, 247, 0.72);
     text-decoration: none;
@@ -538,6 +546,8 @@ header .container {
     width: 250px; /* Adjust the width as needed */
     background-color: #fff;
     z-index: 1000;
+    -webkit-transition: right 0.3s ease;
+    -o-transition: right 0.3s ease;
     transition: right 0.3s ease; /* Transition effect for smooth sliding */
 }
 
