@@ -333,7 +333,7 @@ body {
     padding-top: 80px;
 
 }
-header .container {
+header .containercustom {
     padding-top: 60px;
 }
 .header h1 {
@@ -345,6 +345,56 @@ header .container {
     font-size: 1.5em;
 }
 
+.custom-bg-light {
+    background-color: #f8f9fa; /* Light gray background */
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Adjustments for image alignment */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Optional: add rounded corners to images */
+.rounded {
+    border-radius: 15px;
+}
+
+/* Optional: add shadow effect to images */
+.shadow {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+    background: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M5.5 0a.5.5 0 01.5.5v2.8L8 .9 7.1 0 4 3.1 1 0 .1.9-.9.9 2.4 2.4V.5a.5.5 0 01.5-.5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+}
+
+.carousel-control-prev-icon {
+    transform: rotate(180deg);
+}
 
 .footer {
     font-size: 80%;
