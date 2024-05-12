@@ -64,7 +64,10 @@
     font-family: 'Inter', sans-serif;
     font-weight: 800;
 }
-
+.medium-text{
+    font-family: 'Inter' sans-serif;
+    font-weight: 500;
+}
 .black-text {
     font-family: 'Inter', sans-serif;
     font-weight: 900;
@@ -280,7 +283,7 @@ body {
     margin-right: 0px;
     padding-bottom: 12px;
 }
-.container {
+.containercustom {
     position: relative;
     z-index: 2;
 }
