@@ -42,7 +42,9 @@
 
 .regular-text {
     font-family: 'Inter', sans-serif;
+   
 }
+
 .clock-style{
     line-height: 2;
 }
@@ -208,8 +210,7 @@ body {
 .text-scale:hover {
     font-size: 1em;
 }
-.navbar-nav .nav-link.customlinka:hover,
-.navbar-nav .nav-link.customlinka:focus {
+.navbar-nav .nav-link.customlinka:hover{
     color: #CCCCCC !important; /* Change to the desired hover color */
 }
 ::-webkit-scrollbar-thumb:hover {
