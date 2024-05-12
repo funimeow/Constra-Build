@@ -281,6 +281,9 @@ body {
 .custombuttonsize{
     font-size: 90%;
 }
+.footer a:active {
+    outline: none; /* Remove the default focus outline */
+}
 
 
 /* Apply rounded corners to specific sections */

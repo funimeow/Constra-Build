@@ -220,17 +220,22 @@
     <script>
         window.addEventListener('DOMContentLoaded', (event) => {
             // Check if page is being reloaded
+            console.log("Navigation type:", performance.navigation.type);
             if (performance.navigation.type === 1) {
-                // Scroll to the #home section
-                window.location.href = "#home";
-                // Smooth scroll back up to the top
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
+               
+        
+                // Smooth scroll back up to the top after a short delay
+                setTimeout(() => {
+                    console.log("Scrolling back to the top...");
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }, 200); // Adjust the delay time (in milliseconds) as needed
             }
         });
         
+       
         
     </script>
     <script>
