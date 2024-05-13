@@ -602,72 +602,17 @@ header .containercustom {
         display: none;
     }
 }
-.section-content {
-    padding: 0 20px; /* Adjust as needed */
+#leftArrow, #rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000; /* Ensure the buttons are above other content */
 }
 
-.carousel-inner {
-    display: flex;
-    flex-direction: column;
+#leftArrow {
+    left: 10px;
 }
 
-
-
-.carousel-item {
-    display: flex;
-    align-items: stretch;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: auto;
-    background: none;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M1.5 0a.5.5 0 01.354.146l3 3a.5.5 0 010 .708l-3 3A.5.5 0 011 6.5v-5a.5.5 0 01.5-.5z'/%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-}
-
-.carousel-control-prev-icon {
-    transform: rotate(180deg);
-}
-
-.carousel-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-section .col-md-6 {
-    order: 1;
-}
-
-.carousel-section img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-.carousel-section h2,
-.carousel-section p,
-.carousel-section a {
-    text-align: center;
-}
-.carousel-image {
-    width: 100%;
-    height: auto;
-}
-.section-content h2,
-.section-content p {
-    text-align: left;
-}
-@media (max-width: 991.98px) {
-    .section-content {
-        text-align: center;
-    }
-    .carousel-section .row {
-        flex-direction: column;
-    }
+#rightArrow {
+    right: 10px;
 }
