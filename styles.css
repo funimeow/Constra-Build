@@ -333,6 +333,9 @@ body {
     padding-top: 80px;
 
 }
+.containermeow{
+    border-radius: 20px ;
+}
 header .containercustom {
     padding-top: 60px;
 }
@@ -370,6 +373,7 @@ header .containercustom {
 
 .footer {
     font-size: 80%;
+    
     bottom: 0;
     width: 100%;
     background-color: #333;
@@ -378,6 +382,18 @@ header .containercustom {
     text-align: center;
     z-index: 9999;
 }
+.footercustom{
+border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.navbar{
+    border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;}
+
+
 .section-content p {
     margin-bottom: 20px;
 }
@@ -650,15 +666,42 @@ header .containercustom {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     
+    .arrow {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9999;
+        cursor: pointer;
+    }
+    
     .prev {
-        left: 10px;
+        left: 10px; /* Adjust the distance from the left edge */
     }
     
     .next {
-        right: 10px;
+        right: 10px; /* Adjust the distance from the right edge */
     }
+    @media (max-width: 767px) {
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 9999;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+    }
+.a, a{
+        text-decoration: none !important;
+    }
+
     
-    
+   
     @keyframes slideIn {
         from {
             opacity: 0;
@@ -687,3 +730,64 @@ header .containercustom {
         align-items: center; /* Vertically center the content */
         justify-content: center; /* Horizontally center the content */
     }
+    @media (min-width: 768px) {
+        .col-md-6 {
+           flex: initial !important;
+           width: 100% !important;
+        }
+    }
+
+    .title-style {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: #333;
+    }
+    
+    .paragraph-style {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 1.1rem;
+        color: #666;
+        line-height: 1.8;
+    }
+    
+    .list-style {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    /* Button Styles */
+    .btn-style {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        padding: 12px 24px;
+        border-radius: 25px;
+        background-color: #47537d;
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+    
+    .btn-style:hover {
+        background-color: #3e4a6b;
+            border-color: #3e4a6b;
+        
+    }
+    
+    /* Additional Styles */
+    .section-custom {
+        background-color: #f8f9fa; /* Light gray background */
+        border-radius: 15px;
+        padding: 40px;
+        margin-bottom: 40px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .customcont {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    
+

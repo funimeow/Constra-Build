@@ -23,4 +23,3 @@ document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
         }
     });
 });
-
