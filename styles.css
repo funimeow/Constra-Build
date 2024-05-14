@@ -333,9 +333,7 @@ body {
     padding-top: 80px;
 
 }
-.containermeow{
-    border-radius: 20px ;
-}
+
 header .containercustom {
     padding-top: 60px;
 }
@@ -354,21 +352,7 @@ header .containercustom {
     padding-bottom: 80px;
 }
 
-/* Adjustments for image alignment */
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
 
-/* Optional: add rounded corners to images */
-.rounded {
-    border-radius: 15px;
-}
-
-/* Optional: add shadow effect to images */
-.shadow {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
 
 
 .footer {
@@ -639,48 +623,13 @@ border-top-left-radius: 20px;
         overflow: hidden;
     }
 
-    .section-custom {
-        display: none;
-    }
+  
 
     section {
         position: relative; /* Ensure the section is the positioning context */
     }
     
-    .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 50px;
-        height: 50px;
-        background-color: #ffffff;
-        color: #000000;
-        font-weight: bold;
-        font-size: 20px;
-        transition: all 0.3s ease;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    
-    .arrow {
-        position: fixed;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 9999;
-        cursor: pointer;
-    }
-    
-    .prev {
-        left: 10px; /* Adjust the distance from the left edge */
-    }
-    
-    .next {
-        right: 10px; /* Adjust the distance from the right edge */
-    }
+ 
     @media (max-width: 767px) {
         .prev,
         .next {
@@ -717,18 +666,19 @@ border-top-left-radius: 20px;
     .section-custom {
         animation: slideIn 0.5s ease forwards;
         opacity: 0; /* Initial opacity to start the animation */
-        display: none; /* Hide sections by default */
+   /
+        
+        
     }
 
-    .section-custom.active {
-        display: block; /* Show active section */
-    }
+  
 
-    #services, #careers {
-        height: 100vh; /* Match the height of the viewport */
-        display: flex;
-        align-items: center; /* Vertically center the content */
-        justify-content: center; /* Horizontally center the content */
+    #services, #careers, #contact {
+    /* Match the height of the viewport */
+       padding:5%;
+        
+        align-items: left; /* Vertically center the content */
+        justify-content: left; /* Horizontally center the content */
     }
     @media (min-width: 768px) {
         .col-md-6 {
@@ -779,14 +729,17 @@ border-top-left-radius: 20px;
     .section-custom {
         background-color: #f8f9fa; /* Light gray background */
         border-radius: 15px;
-        padding: 40px;
-       
+    
+        justify-content: left; /* Align horizontal */
+        align-items: left; /* Align vertical */
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     }
     
     .customcont {
         max-width: 900px;
         margin: 0 auto;
+        display: flex;
+
     }
     
     

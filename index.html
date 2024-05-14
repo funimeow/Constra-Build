@@ -159,66 +159,64 @@
 <!-- HTML -->
 <!-- HTML -->
 <!-- HTML -->
-<section class="section-custom pt-5 pb-5 active" id="services">
+<section class="section-custom active" id="services">
     <div class="container customcont">
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12">
                 <h2 class="black-text servicesanim title-style">Our Services</h2>
-                <p class="medium-text mt-4 paragraph-style">At ConstraBuild S.A.R.L, we offer a range of services tailored to meet the unique needs of our clients. Our team of experts will work with you to develop customized solutions that maximize efficiency and minimize costs. We provide services in the following areas:</p>
-                <ul class="medium-text text-center list-style">
-                    <li>General Contracting</li>
-                    <li>Construction Project Management</li>
-                    <li>Renovation and Rehabilitation</li>
-                    <li>High-tech Finishing</li>
-                </ul>
-                <a href="#" class="btn mt-4 btn-style text-white">Learn More</a>
+                <p class="medium-text mt-4 paragraph-style">At ConstraBuild S.A.R.L, we offer a range of services tailored to meet the unique needs of our clients. Our team of experts will work with you to develop customized solutions that maximize efficiency and minimize costs. We provide a wide range of services ranging from construction project management to renovation and habitation.
+                </p>
+                <div class="row">
+                    <div class="col-lg-4 text-center">
+                        <i class="fas fa-hammer fa-3x mb-3 fa-custom-color"></i>
+                        <h3 class="title-fade-in aboutmoew">General Contracting</h3>
+                        <p class="fs-6 zoom-in paragraphmeoww">This mode of operation is effective for projects with a well-defined scope. We specialize in general contracting for various types of civil and electro-mechanical works, including high-rise buildings, offices, commercial towers, villas, and military compounds.</p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <i class="fas fa-cogs fa-3x mb-3 fa-custom-color"></i>
+                        <h3 class="title-fade-in aboutmoew">Project & Construction Management</h3>
+                        <p class="fs-6 zoom-in paragraphmeoww">Our project and construction management services offer comprehensive oversight and control throughout the project lifecycle. From overall project management to site coordination, we focus on maximizing efficiency and minimizing costs through value engineering and meticulous planning.</p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <i class="fas fa-tools fa-3x mb-3 fa-custom-color"></i>
+                        <h3 class="title-fade-in aboutmoew">Renovation</h3>
+                        <p class="fs-6 zoom-in paragraphmeoww">Our renovation services breathe new life into existing structures. Whether it's a residential property or a commercial building, our skilled team transforms spaces with creativity and attention to detail, enhancing both aesthetics and functionality.</p>
+                    </div>
+                </div>
             </div>
-            <a class="prev" onclick="changeSlide(-1)">❮</a>
-            <a class="next" onclick="changeSlide(1)">❯</a>
+                
+              
+            </div>
         </div>
     </div>
 </section>
 
-<section class="section-custom pt-5 pb-5" id="careers">
+<section class="section-custom" id="careers">
     <div class="container customcont">
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12">
                 <h2 class="black-text title-style">Careers</h2>
                 <p class="medium-text mt-4 paragraph-style">Interested in joining our team? Explore exciting career opportunities in architecture with us! We're dedicated to fostering talent and innovation, offering a dynamic environment where creativity thrives. Discover how you can contribute to shaping the world around us and be part of a team committed to architectural excellence. Join us on this inspiring journey as we build the future together.</p>
                 <a href="#" class="btn  mt-4 btn-style text-white">Learn More</a>
             </div>
-            <a class="prev" onclick="changeSlide(-1)">❮</a>
-            <a class="next" onclick="changeSlide(1)">❯</a>
         </div>
     </div>
 </section>
 
+<section class="section-custom" id="contact">
+    <div class="container customcont">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="black-text servicesanim title-style">Contact Us</h2>
+                <p class="medium-text mt-4 paragraph-style">For any inquiries, collaborations, or questions, please don't hesitate to reach out to us. Our dedicated team at ConstraBuild S.A.R.L is here to assist you. Whether you're seeking expert advice on a project, interested in exploring partnership opportunities, or simply want to learn more about our services, we welcome your contact. Feel free to use the provided contact information below or fill out the form on our website by clicking on the button below. We strive to respond promptly and look forward to hearing from you soon.
+                </p>
+                
+                <a href="#" class="btn mt-4 btn-style text-white ">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-
-    
-    
-<script>
-    let slideIndex = 0;
-    showSlide(slideIndex);
-
-    function changeSlide(n) {
-        showSlide(slideIndex += n);
-    }
-
-    function showSlide(n) {
-        const slides = document.getElementsByClassName("section-custom");
-        if (n >= slides.length) {
-            slideIndex = 0;
-        }
-        if (n < 0) {
-            slideIndex = slides.length - 1;
-        }
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slides[slideIndex].style.display = "block";
-    }
-</script>
     
     
     
