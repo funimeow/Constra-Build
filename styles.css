@@ -617,3 +617,73 @@ header .containercustom {
     right: 10px;
 }
 
+ .slideshow-container {
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .section-custom {
+        display: none;
+    }
+
+    section {
+        position: relative; /* Ensure the section is the positioning context */
+    }
+    
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: bold;
+        font-size: 20px;
+        transition: all 0.3s ease;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    
+    
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Apply animation to section content */
+    .section-custom {
+        animation: slideIn 0.5s ease forwards;
+        opacity: 0; /* Initial opacity to start the animation */
+        display: none; /* Hide sections by default */
+    }
+
+    .section-custom.active {
+        display: block; /* Show active section */
+    }
+
+    #services, #careers {
+        height: 100vh; /* Match the height of the viewport */
+        display: flex;
+        align-items: center; /* Vertically center the content */
+        justify-content: center; /* Horizontally center the content */
+    }
