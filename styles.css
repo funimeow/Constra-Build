@@ -335,7 +335,7 @@ body {
 }
 .learn-more-button {
     display: block;
-    margin: 0 auto;
+    
     margin-top: 20px;
     padding: 15px 30px;
     border-radius: 50px;
@@ -756,7 +756,7 @@ border-top-left-radius: 20px;
     
         justify-content: left; /* Align horizontal */
         align-items: left; /* Align vertical */
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
     }
     
     .customcont {
@@ -783,3 +783,31 @@ border-top-left-radius: 20px;
         --bs-btn-disabled-bg: #47537d !important;
         --bs-btn-disabled-border-color: #47537d !important;
     }
+/* Button Styles */
+.custom-btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    border-radius: 25px;
+    background-color: #2e3756;
+    color: #fff;
+    border: 2px solid #2e3756;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.custom-btn:hover {
+    background-color: #34415e; /* Adjust hover background color as needed */
+    color: #fff;
+}
+
+.custom-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(71, 83, 125, 0.5);
+}
+
+.custom-btn:active {
+    background-color: #2e3756;
+    border-color: #2e3756;
+}
