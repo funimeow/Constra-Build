@@ -23,3 +23,30 @@ document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const learnMoreButton = document.querySelector('.learn-more-button');
+    const paragraphs = document.querySelectorAll('.paragraphmeowwwww');
+    const buttonArrowIcon = document.querySelector('.arrow-icon');
+
+    // Initially hide paragraphs
+    paragraphs.forEach(paragraph => {
+        paragraph.style.display = 'none';
+    });
+
+    learnMoreButton.addEventListener('click', function() {
+        paragraphs.forEach(paragraph => {
+            if (paragraph.style.display === 'none') {
+                paragraph.style.display = 'block';
+                learnMoreButton.querySelector('.button-text').textContent = 'Show Less';
+                buttonArrowIcon.classList.remove('fa-arrow-down');
+                buttonArrowIcon.classList.add('fa-arrow-up');
+            } else {
+                paragraph.style.display = 'none';
+                learnMoreButton.querySelector('.button-text').textContent = 'Learn More';
+                buttonArrowIcon.classList.remove('fa-arrow-up');
+                buttonArrowIcon.classList.add('fa-arrow-down');
+            }
+        });
+    });
+});
