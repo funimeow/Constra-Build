@@ -220,9 +220,8 @@ body {
 .text-scale:hover {
     font-size: 1em;
 }
-.navbar-nav .nav-link.customlinka:hover{
-    color: #CCCCCC !important; /* Change to the desired hover color */
-}
+
+
 ::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
@@ -234,6 +233,15 @@ body {
     transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
+/* Default hover effect for navbar links */
+.navbar .nav-link:hover {
+    color: #CCCCCC !important; /* Grey color */
+}
+
+/* Hover effect for navbar links when navbar has the scrolled class */
+.navbar.scrolled .nav-link:hover {
+    color: #000 !important; /* Black color */
+}
 
 
 
@@ -412,7 +420,7 @@ border-top-left-radius: 20px;
     text-decoration: none;
 }
 .text-white-custom{
-    color:#DCDCDC !important
+    color:#CCCCCC !important
 }
 
 .footer .quick-links a:hover {
@@ -426,8 +434,9 @@ border-top-left-radius: 20px;
     color: #ffffff !important;
 }
 .navbar.scrolled .nav-link {
-    color: #000!important; /* Change the color to gray/black */
+    color: #3F3F3F !important; /* Change the color to gray/black */
 }
+
 .navbar,
 .header,
 .footer,
@@ -587,38 +596,58 @@ border-top-left-radius: 20px;
     position: absolute;
 }
 
-/* Sidebar styles */
 .sidebar {
     position: fixed;
-    right: -250px; /* Start position of the sidebar (off-screen) */
+    right: -250px;
     top: 0;
     height: 100%;
-    width: 250px; /* Adjust the width as needed */
+    width: 250px;
     background-color: #fff;
     z-index: 1000;
-    -webkit-transition: right 0.3s ease;
-    -o-transition: right 0.3s ease;
-    transition: right 0.3s ease; /* Transition effect for smooth sliding */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
 }
 
 .sidebar.active {
-    right: 0; /* Slide the sidebar into view */
+    right: 0;
 }
 
-.sidebar ul {
-    list-style-type: none;
+.sidebar-header {
+    background-color: #FFF;
     padding: 20px;
+    text-align: center;
 }
 
-.sidebar ul li {
-    margin-bottom: 15px;
-}
-
-.sidebar ul li a {
+.sidebar-header h3 {
     color: #000;
-    text-decoration: none;
-    font-size: 18px;
+    
+    margin: 0;
 }
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-menu li a:hover {
+    background-color: #f0f0f0;
+    color: #555;
+}
+
 
 /* Hide the additional links button on small screens */
 @media (max-width: 991.98px) {
@@ -696,7 +725,7 @@ border-top-left-radius: 20px;
     }
 
   
-
+    
     #services, #careers, #contact {
     /* Match the height of the viewport */
        padding:5%;
@@ -786,8 +815,8 @@ border-top-left-radius: 20px;
 /* Button Styles */
 .custom-btn {
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 500;
+    font-size: 1rem;
     padding: 12px 30px;
     border-radius: 25px;
     background-color: #2e3756;
@@ -811,3 +840,59 @@ border-top-left-radius: 20px;
     background-color: #2e3756;
     border-color: #2e3756;
 }
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    padding: 12px 30px;
+    border-radius: 25px;
+    background-color: #2e3756;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #34415e;
+  }
+  
+  .contact-form button:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(71, 83, 125, 0.5);
+  }
+/* Remove the box-shadow for the contact section */
+.title-style {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #333;
+    border-bottom: 1px solid #ccc; /* Add a small line below the title */
+    padding-bottom: 10px; /* Adjust spacing */
+}
+
+#contact, #careers, #services {
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 15px;
+    padding: 5%;
+    align-items: left; /* Align horizontally */
+    justify-content: left; /* Align vertically */
+    border-top: 1px solid #ccc; /* Add a small line above the section */
+}
+
+
+  

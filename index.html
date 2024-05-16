@@ -88,13 +88,17 @@
 
 <!-- Sidebar for additional links -->
 <div class="sidebar" id="additionalLinksSidebar">
-    <ul>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
+    <div class="sidebar-header bold-text">
+        <h3>Additional Links</h3>
+    </div>
+    <ul class="sidebar-menu">
+        <li><a class="regular-text" href="#">Link 1</a></li>
+        <li><a class="regular-text" href="#">Link 2</a></li>
+        <li><a class="regular-text" href="#">Link 3</a></li>
         <!-- Add more links as needed -->
     </ul>
 </div>
+
 
 
 
@@ -166,7 +170,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="black-text title-style">Our Services</h2>
-                <p style="margin-bottom:50px" class="medium-text mt-4 paragraph-style">At ConstraBuild S.A.R.L, we don't just build structures, we craft solutions. From groundbreaking construction projects to revitalizing renovations, our expert team is dedicated to turning your vision into reality. Let's build brilliance together!</p>
+                <p style="margin-bottom:50px" class="medium-text mt-4 paragraph-style">At Constra-Build S.A.R.L, we don't just build structures, we craft solutions. From groundbreaking construction projects to revitalizing renovations, our expert team is dedicated to turning your vision into reality. Let's build brilliance together!</p>
                 
                 <button class="btn btn-primary learn-more-button">
                     <span class="button-text">Learn More</span>
@@ -186,8 +190,8 @@
     <div class="container customcont  pt-4">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="black-text title-style">Careers</h2>
-                <p style="margin-bottom:50px" class="medium-text mt-4 paragraph-style">Interested in joining our team? Explore exciting career opportunities in architecture with us! We're dedicated to fostering talent and innovation, offering a dynamic environment where creativity thrives. Discover how you can contribute to shaping the world around us and be part of a team committed to architectural excellence. Join us on this inspiring journey as we build the future together.</p>
+                <h2 class="black-text title-style"></h2>
+                <p style="margin-bottom:50px" class="medium-text mt-4 paragraph-style">Join Our Team of Architects and Shape the Future with Constra-Build! Explore Exciting Career Opportunities Where Innovation and Creativity Thrive. Be Part of Our Vision for Architectural Excellence and Make Your Mark on the World. Join Us in Building the Future Today!</p>
                 <button class="btn btn-primary learn-more-button">
                     <span class="button-text">Learn More</span>
                   
@@ -197,22 +201,30 @@
     </div>
 </section>
 
-<section class="section-custom" id="contact">
-    <div class="container customcont  pt-4">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="black-text servicesanim title-style">Contact Us</h2>
-                <p style="margin-bottom:50px" class="medium-text mt-4 paragraph-style">For any inquiries, collaborations, or questions, please don't hesitate to reach out to us. Our dedicated team at ConstraBuild S.A.R.L is here to assist you. Whether you're seeking expert advice on a project, interested in exploring partnership opportunities, or simply want to learn more about our services, we welcome your contact. Feel free to use the provided contact information below or fill out the form on our website by clicking on the button below. We strive to respond promptly and look forward to hearing from you soon.
-                </p>
-                
-                <button class="btn btn-primary learn-more-button">
-                    <span class="button-text">Learn More</span>
-                  
-                </button>
-            </div>
-        </div>
+<section id="contact">
+    <div class="containercustom">
+      <div class="section-content">
+        <h2 class="title-style">Contact Us</h2>
+        <p class="paragraph-style">Got questions or feedback? Feel free to reach out to us using the contact form below.</p>
+        <!-- Contact Form -->
+        <form id="contact-form" class="contact-form" method="post" action="send-email.php">
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea name="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-style">Send Message</button>
+        </form>
+      </div>
     </div>
-</section>
+  </section>
+  
+  
+  
 
     
     
@@ -369,7 +381,7 @@
             var logo = document.getElementById('navbar-brand');
             var homeLink = document.querySelector('.nav-link.customlinka:first-child');
             var otherLinks = document.querySelectorAll('.nav-link.customlinka:not(:first-child)');
-
+        
             if (window.scrollY > 0) {
                 navbar.classList.add('scrolled');
                 logo.src = 'images/logo.png'; // Change to the white logo image
@@ -378,6 +390,10 @@
                     link.classList.remove('text-white');
                     link.classList.add('text-gray');
                 });
+        
+                // Ensure the "Home" link stays white
+                homeLink.classList.remove('text-gray');
+                homeLink.classList.add('text-white-custom');
             } else {
                 navbar.classList.remove('scrolled');
                 logo.src = 'images/logo-white.png'; // Change to the original logo image
@@ -386,16 +402,21 @@
                     link.classList.remove('text-gray');
                     link.classList.add('text-white');
                 });
+        
+                // Ensure the "Home" link stays white
+                homeLink.classList.remove('text-gray');
+                homeLink.classList.add('text-white-custom');
             }
         });
-
-        let navbarLinks = document.querySelectorAll('.navbar a'); // Replace '.navbar a' with the correct selector for your navbar links
-
+        
+        let navbarLinks = document.querySelectorAll('.navbar a');
+        
         navbarLinks.forEach(link => {
             link.addEventListener('click', function() {
                 this.classList.add('no-hover');
             });
-        });  
+        });
+        
     </script>
     <script>
         window.addEventListener('DOMContentLoaded', function() {
