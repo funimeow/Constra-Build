@@ -24,3 +24,6 @@ document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
     });
 });
 
+document.getElementById("learn-more-button").addEventListener("click", function() {
+    window.location.href = "services.html";
+});

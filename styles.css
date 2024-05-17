@@ -11,8 +11,6 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-
-
 @font-face {
     font-family: 'Inter';
     font-style: normal;
@@ -128,7 +126,7 @@ body {
     margin: 0;
   
     font-size: 100%;
-    
+    overflow: overlay;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -138,13 +136,17 @@ body {
 }
 ::-webkit-scrollbar {
     width: 8px;
-    background-color: #f5f5f5;
+    background-color: transparent !important;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #888;
+    overflow-y: scroll;
     border-radius: 4px;
 }
+::-webkit-scrollbar-track {
+    background-color: transparent; /* Change the background color to transparent */
+}   
 
 @-webkit-keyframes fadeInFromTop {
     from {
@@ -569,7 +571,7 @@ border-top-left-radius: 20px;
 }
 
     .navbar-brand-width {
-        margin-top:16.5px !important;
+        margin-top: 0px !important;
         margin-left:10px !important
     }
 
@@ -895,4 +897,85 @@ border-top-left-radius: 20px;
 }
 
 
+#careers {
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 15px;
+    padding: 5%;
+    border-top: 1px solid #ccc; /* Add a small line above the section */
+    margin-bottom: 20px;
+}
+
+.title-style {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #333;
+    border-bottom: 1px solid #ccc; /* Add a small line below the title */
+    padding-bottom: 10px; /* Adjust spacing */
   
+    margin-bottom: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.custom-btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 12px 30px;
+    border-radius: 25px;
+    background-color: #2e3756;
+    color: #fff;
+    border: 2px solid #2e3756;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.custom-btn:hover {
+    background-color: #34415e; /* Adjust hover background color as needed */
+    color: #fff;
+}
+
+.custom-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(71, 83, 125, 0.5);
+}
+
+.custom-btn:active {
+    background-color: #2e3756;
+    border-color: #2e3756;
+}
+#careers .btn-primary {
+    display: block;
+    margin: 0 auto;
+}
