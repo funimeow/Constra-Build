@@ -54,7 +54,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="position-absolute top-0 start-0">
         <a href="#">
-            <img id="navbar-brand" style="max-width:190px; margin-top:0px; margin-left:4px" class="navbar-brand-width" src="images/logo-white.png" alt="Logo">
+            <img id="navbar-brand" style="max-width:190px; max-height:140px;  margin-top:0px; margin-left:4px" class="navbar-brand-width" src="images/logo-white.png" alt="Logo">
         </a>
     </div>
     <button style="margin-right: 6px; " class="navbar-toggler custombuttonsize ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -144,7 +144,7 @@
     
         <div class="overlay"></div>
     
-        <div class="container containercustom" style="padding: 277px 0; padding-bottom:250px">
+        <div class="container containercustom" style="padding: 277px 0; padding-bottom:250px;">
             <div class="row">
                 <div class="col-lg-6 mx-auto text-center fade-in">
                     <h3 class="display-6 fs-1 title-fade-in custom-titles text-white titol bold-text">Quality Construction & Renovation Services</h3>
@@ -191,30 +191,33 @@
       <div class="row">
         <div class="col-md-4">
           <div class="project-card">
-            <img src="path/to/image1.jpg" alt="Project 1" class="project-image">
-            <p class="project-text">Project 1 Description</p>
+            <img src="images/image2.jpg" alt="Project 1" class="project-image">
+            <h2 style="border-bottom: 1px solid #ccc; padding-bottom: 10px;" class="medium-text">Project 1</h2>
+            <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent imperdiet pellentesque faucibus. Integer vel aliquam libero. Quisque et elit euismod arcu vestibulum lacinia vel non nunc. Donec lacus libero, mattis congue ex ut, congue ornare diam. Sed dui tortor, vulputate et enim vel, convallis condimentum libero. Integer imperdiet hendrerit interdum. Fusce vitae lacus elementum, semper ante sed, auctor turpis.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="project-card">
-            <img src="path/to/image2.jpg" alt="Project 2" class="project-image">
-            <p class="project-text">Project 2 Description</p>
+            <img src="images/image2.jpg" alt="Project 2" class="project-image">
+            <h2 style="border-bottom: 1px solid #ccc; padding-bottom: 10px;" class="medium-text">Project 2</h2>
+            <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent imperdiet pellentesque faucibus. Integer vel aliquam libero. Quisque et elit euismod arcu vestibulum lacinia vel non nunc. Donec lacus libero, mattis congue ex ut, congue ornare diam. Sed dui tortor, vulputate et enim vel, convallis condimentum libero. Integer imperdiet hendrerit interdum. Fusce vitae lacus elementum, semper ante sed, auctor turpis.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="project-card">
-            <img src="path/to/image3.jpg" alt="Project 3" class="project-image">
-            <p class="project-text">Project 3 Description</p>
+            <img src="images/image2.jpg" alt="Project 3" class="project-image">
+            <h2 style="border-bottom: 1px solid #ccc; padding-bottom: 10px;" class="medium-text">Project 3</h2>
+            <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent imperdiet pellentesque faucibus. Integer vel aliquam libero. Quisque et elit euismod arcu vestibulum lacinia vel non nunc. Donec lacus libero, mattis congue ex ut, congue ornare diam. Sed dui tortor, vulputate et enim vel, convallis condimentum libero. Integer imperdiet hendrerit interdum. Fusce vitae lacus elementum, semper ante sed, auctor turpis.</p>
           </div>
         </div>
       </div>
       <div class="text-center">
         <button id="view-all-projects" class="btn btn-primary learn-more-button">
-            <span class="button-text">View All Projects</span>
+          <span class="button-text">View All Projects</span>
         </button>
       </div>
     </div>
-</section>
+  </section>
 
 
 <section id="contact">
@@ -223,21 +226,27 @@
         <h2 class="title-style">Contact Us</h2>
         <p class="paragraph-style">Got questions or feedback? Feel free to reach out to us using the contact form below.</p>
         <!-- Contact Form -->
-        <form id="contact-form" class="contact-form" method="post" action="send-email.php">
+        <form id="contact-form" class="contact-form" action="https://formsubmit.co/f6bf5ddf620becf4117acad180fb0b96" method="POST">
           <div class="form-group">
-            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            <input id="nameform" type="text" name="name" class="form-control" placeholder="Your Name" required>
           </div>
           <div class="form-group">
-            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            <input id="emailform" type="email" name="email" class="form-control" placeholder="Your Email" required>
           </div>
           <div class="form-group">
-            <textarea name="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
+            <input id="subjectform" type="text" name="subject" class="form-control" placeholder="Subject" required>
           </div>
-          <button type="submit" class="btn-style">Send Message</button>
+          <div class="form-group">
+            <textarea id="messageform" name="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button id="submitbutton" type="submit" class="btn-style">Send Message</button>
         </form>
       </div>
     </div>
   </section>
+  
+</script>
+
   
   
   
@@ -270,7 +279,7 @@
                 <!-- Contact Info -->
                 <div class="col-md-4 quick-links">
                     <h5><i class="fas fa-address-book"></i> Contact Info</h5>
-                    <p><i class="fas fa-map-marker-alt"></i> <a style="margin-left:2px;" class="regular-text" href="https://www.google.com/maps/place/Constra-Build+S.A.R.L/@33.8921599,35.5244918,17z/data=!3m1!4b1!4m12!1m5!8m4!1e2!2s114119624195180996759!3m1!1e1!3m5!1s0x151f17005957d17f:0x1c391c47e80e57e1!8m2!3d33.8921555!4d35.5270667!16s%2Fg%2F11vrkr2bf6?authuser=1&entry=ttu"> Achrafieh, Rmeil, St. Louis Street, Francois Yazbeck Building, First Floor</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <a style="margin-left:2px;" class="regular-text" href="https://www.google.com/maps/place/Constra-Build+S.A.R.L/@33.8921599,35.5244918,17z/data=!3m1!4b1!4m12!1m5!8m4!1e2!2s114119624195180996759!3m1!1e1!3m5!1s0x151f17005957d17f:0x1c391c47e80e57e1!8m2!3d33.8921555!4d35.5270667!16s%2Fg%2F11vrkr2bf6?authuser=1&entry=ttu"> Achrafieh, Rmeil, St. Lois Street, Francois Yazbeck Building, First Floor</a></p>
                    
                     <p><i class="fas fa-envelope fa-customlinkcolor"></i> <a style="margin-left:2px;" class="regular-text" href="mailto:info@constra-build.com">Email: info@constra-build.com</a></p>
                     <p><i class="fas fa-phone fa-customlinkcolor"></i> <a style="margin-left:2px;" class="regular-text" href="tel:+96103541418">Phone: +961 03 54 14 18</a></p>
