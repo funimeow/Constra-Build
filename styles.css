@@ -949,7 +949,16 @@ border-top-left-radius: 20px;
     
     
 }
-
+.custommargino{
+    margin: initial;
+}
+@media only screen 
+   and (max-width : 600px) {
+    .custommarginno{
+        margin-top: 8px !important;
+    }
+   /* Styles here */
+}
 
 #contact, #careers, #services {
     background-color: #f8f9fa; /* Light gray background */
