@@ -325,7 +325,7 @@ body {
     transition: background-color 0.3s ease;
 }
 .navbar {
-    border-bottom: none !important;
+    border-bottom: none ;
     
     position: fixed;
     z-index: 3;
@@ -437,12 +437,18 @@ border-top-left-radius: 20px;
 
 .navbar.scrolled {
     background-color: white !important;
+    border-bottom: 1px solid #ccc !important;
 }
 .active-link {
     color: #ffffff !important;
 }
+.navbar.scrolled .phone-link,
+.navbar.scrolled .email-link {
+    color: #000 !important;
+}
+
 .navbar.scrolled .nav-link {
-    color: #3F3F3F !important; /* Change the color to gray/black */
+    color: #686666 !important; /* Change the color to gray/black */
 }
 
 .navbar,
@@ -761,7 +767,7 @@ border-top-left-radius: 20px;
 
   
     
-    #services, #careers, #contact {
+    #aboutus, #services, #careers, #contact {
     /* Match the height of the viewport */
        padding:5%;
         
@@ -783,7 +789,7 @@ border-top-left-radius: 20px;
         }
     }
     @media (max-width: 768px) {
-        #careers, #contact, #services {
+        #careers, #contact, #services, #aboutus {
             border-radius: 0px !important;
     
         }
@@ -960,7 +966,7 @@ border-top-left-radius: 20px;
    /* Styles here */
 }
 
-#contact, #careers, #services {
+#contact, #careers, #services, #aboutus {
     background-color: #f8f9fa; /* Light gray background */
     border-radius: 15px;
     padding: 5%;
@@ -973,7 +979,9 @@ border-top-left-radius: 20px;
             justify-content: left; /* Align vertically */
     border-top: 1px solid #ccc; /* Add a small line above the section */
 }
-
+.navbar.scrolled .nav-item:first-child .nav-link {
+    color:#000 !important; /* Adjust the opacity as needed */
+}
 
 #careers {
     background-color: #f8f9fa; /* Light gray background */
