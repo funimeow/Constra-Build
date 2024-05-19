@@ -15,12 +15,4 @@ document.getElementById("learn-more-button").addEventListener("click", function(
     window.location.href = "services.html";
 });
 
-window.addEventListener('scroll', function() {
-    var navbar = document.querySelector('.navbar');
-    var contactInfo = document.getElementById('contactInfo');
-    if (window.scrollY > navbar.offsetHeight) {
-        contactInfo.classList.remove('text-white');
-    } else {
-        contactInfo.classList.add('text-white');
-    }
-});
+

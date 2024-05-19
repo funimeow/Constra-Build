@@ -9,45 +9,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="script.js"></script>
-    <style>
-     
- 
-
-        .fade-in {
-            opacity: 0;
-            transition: opacity 0.25s ease;
-        }
-
-        .fade-in.active {
-            opacity: 1;
-        }
-        
-        .btn-primary:hover {
-            background-color: #47537d;
-            border-color: #47537d;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        
-        .fa-custom-color {
-            color: #282f48; 
-            
-        }
-        .customlogosize{
-            font-size: 80%;
-        }
-        .navbar-toggler {
-            padding: .25rem .5rem; /* Adjust padding as needed */
-            font-size: 1rem; /* Adjust font size as needed */
-        }
-       
-
-
-    </style>
+   
 </head>
+<STYLE>
+    .navbar.scrolled .nav-item:nth-child(1) .nav-link {
+        color:#000 !important; /* Adjust the opacity as needed */
+    }
+</style>
+<script>
+    window.addEventListener('scroll', function() {
+        var navbar = document.querySelector('.navbar');
+        var contactInfo = document.getElementById('contactInfo');
+        if (window.scrollY > navbar.offsetHeight) {
+            contactInfo.classList.remove('text-white');
+        } else {
+            contactInfo.classList.add('text-white');
+        }
+    });
+</script>
 <body>
 
 <!-- Navigation Bar -->
@@ -68,7 +47,7 @@
                 <a class="nav-link customlinka medium-text text-white-custom text-center" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link customlinka medium-text text-white text-center" href="#">About Us</a>
+                <a class="nav-link customlinka medium-text text-white text-center" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link customlinka medium-text text-white text-center" href="contact.html">Services</a>
@@ -103,30 +82,18 @@
     
     
     
-    <style>
-        .fs-6 {
-            font-size: initial !important; /* Reset font size to its initial value */
+    
+  <script>
+    window.addEventListener('scroll', function() {
+        var navbar = document.querySelector('.navbar');
+        var contactInfo = document.getElementById('contactInfo');
+        if (window.scrollY > navbar.offsetHeight) {
+            contactInfo.classList.remove('text-white');
+        } else {
+            contactInfo.classList.add('text-white');
         }
-        .margincustomo{
-            margin-bottom: 5px;
-
-        }
-        .marginpara{
-            margin-bottom: 30px;
-        }
-        
-    </style>
-    <style>
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.4); /* Adjust the alpha value for opacity */
-            z-index: 1; /* Ensure the overlay is above the background image */
-        }
-    </style>
+    });
+  </script>
     <header style="height:100vh" id="home" class="container-fluid custom-bg-gray text-dark position-relative">
         <video autoplay="" loop="" muted="" playsinline="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" id="bg-video">
             <source src="images/video.mp4" type="video/mp4">
@@ -167,9 +134,14 @@
                 <h2 class="black-text title-style">About Us</h2>
                 <p style="margin-bottom:50px" class="medium-text mt-4 paragraph-style">Since 2005, Our Company has excelled as a General Contractor and Construction Manager. Specializing in turnkey services for high-tech buildings and constructibility reviews, we prioritize superior quality and timely, budget-conscious execution. Discover more below!</p>
                 
-                <button id="learn-more-button" class="btn btn-primary learn-more-button">
-                    <span class="button-text">Learn More</span>
-                </button>
+                <div class="d-flex ">
+                    <button id="learn-more-button" class="btn btn-primary learn-more-button">
+                        <span class="button-text">Learn More</span>
+                    </button>
+                    <button style="margin-left:10px" id="learn-more-button" class="btn btn-primary learn-more-button">
+                        <span class="button-text">Our Services</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -263,67 +235,55 @@
         <div class="container">
             <div class="row">
                 <!-- Quick Links -->
-                <div class="col-md-4 quick-links">
-                    <h5><i class="fas fa-link"></i> Quick Links</h5>
-                    <ul>
-                        <li><i class="fas fa-home"></i><a style="margin-left:2px;" class="regular-text" href="#"> Home</a></li>
-                        <li><i class="fas fa-briefcase fa-customlinkcolor"></i><a style="margin-left:2px;" class="regular-text" href="portfolio.html"> Portfolio</a></li>
-                        <li><i class="fas fa-envelope fa-customlinkcolor"></i><a style="margin-left:2px;" class="regular-text" href="contact.html"> Contact Us</a></li>
-                    </ul>
+                <div class="col-md-4 mt-4 quick-links">
+                    <h5> Quick Links</h5>
+                    
+                        <p><a class="regular-text" href="#"> Home</a></p>
+                        <p><a class="regular-text" href="portfolio.html"> About Us</a></p>
+                        <p><a class="regular-text" href="portfolio.html"> Services</a></p>
+                        <p><a class="regular-text" href="portfolio.html"> Portfolio</a></p>
+                        <p><a class="regular-text" href="contact.html"> Contact Us</a></p>
+                    
                 </div>
                 <!-- Contact Info -->
-                <div class="col-md-4 quick-links">
-                    <h5><i class="fas fa-address-book"></i> Contact Info</h5>
-                    <p><i class="fas fa-map-marker-alt"></i> <a style="margin-left:2px;" class="regular-text" href="https://www.google.com/maps/place/Constra-Build+S.A.R.L/@33.8921599,35.5244918,17z/data=!3m1!4b1!4m12!1m5!8m4!1e2!2s114119624195180996759!3m1!1e1!3m5!1s0x151f17005957d17f:0x1c391c47e80e57e1!8m2!3d33.8921555!4d35.5270667!16s%2Fg%2F11vrkr2bf6?authuser=1&entry=ttu"> Achrafieh, Rmeil, St. Lois Street, Francois Yazbeck Building, First Floor</a></p>
+                <div class="col-md-4 mt-4 quick-links">
+
+                    <h5> Contact Info</h5>
+                    
+                    <p><a class="regular-text" href="https://www.google.com/maps/place/Constra-Build+S.A.R.L/@33.8921599,35.5244918,17z/data=!3m1!4b1!4m12!1m5!8m4!1e2!2s114119624195180996759!3m1!1e1!3m5!1s0x151f17005957d17f:0x1c391c47e80e57e1!8m2!3d33.8921555!4d35.5270667!16s%2Fg%2F11vrkr2bf6?authuser=1&entry=ttu">Address: Achrafieh, Rmeil, St. Lois Street, Francois Yazbeck Building, First Floor</a></p>
                    
-                    <p><i class="fas fa-envelope fa-customlinkcolor"></i> <a style="margin-left:2px;" class="regular-text" href="mailto:info@constra-build.com">Email: info@constra-build.com</a></p>
-                    <p><i class="fas fa-phone fa-customlinkcolor"></i> <a style="margin-left:2px;" class="regular-text" href="tel:+96103541418">Phone: +961 03 54 14 18</a></p>
+                    <p> <a class="regular-text" href="mailto:info@constra-build.com">Email: info@constra-build.com</a></p>
+                    <p> <a class="regular-text" href="tel:+96103541418">Phone: +961 03 54 14 18</a></p>
                 </div>
                 <!-- Business Hours -->
-                <div class="col-md-4 clock-style">
-                    <h5><i class="fas fa-clock mt-4"></i> Business Hours</h5>
-                    <p><i style="margin-right:2px;" class="far fa-calendar-alt regular-text"></i> Monday - Friday: 9:00 AM - 4:00 PM</p>
-                    <p><i style="margin-right:2px;" class="far fa-calendar-alt regular-text"></i> Saturday: 9:00 AM - 1:00 PM</p>
-                    <p><i style="margin-right:2px;" class="fas fa-calendar-times regular-text"></i> Sunday: Closed</p>
+                <div class="col-md-4 mt-4 quick-links">
+                    <h5> Business Hours</h5>
+                    <p><a " class="regular-text text-gray"> Monday - Friday: 9:00 AM - 4:00 PM</a></p>
+                    <p><a  class="regular-text text-gray"> Saturday: 9:00 AM - 1:00 PM</a></p>
+                    <p><a  class="regular-text text-gray"> Sunday: Closed</a></p>
                 </div>
             </div>
         </div>
-    </footer>
-    
-    
-    
-    
-
-
-    <footer style="background-color: #2c2c2c;" class="footer text-white">
-        <div class="container text-center py">
+        <div class="container text-center" style="margin-top:20px; ">
+            <hr style="width: 100%; margin-bottom: 20px;">
             <p>&copy; 2024 ConstraBuild. All Rights Reserved.</p>
         </div>
     </footer>
     
+    
+    
+    
 
 
-    <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-            // Check if page is being reloaded
-            console.log("Navigation type:", performance.navigation.type);
-            if (performance.navigation.type === 1) {
-               
-        
-                // Smooth scroll back up to the top after a short delay
-                setTimeout(() => {
-                    console.log("Scrolling back to the top...");
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
-                }, 200); // Adjust the delay time (in milliseconds) as needed
-            }
-        });
+   
+    
+
+
+        <script>history.scrollRestoration = "manual"</script>
         
        
         
-    </script>
+    
     <script>
         window.onload = function() {
             var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
