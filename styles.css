@@ -868,13 +868,20 @@ html {
             border-radius: 0px !important;
     
         }
+        
     }
+    @media (max-width: 600px) {
+    .title-style{
+        font-size: 2rem !important;
+    }
+}
     .title-style {
         font-family: 'Inter', sans-serif;
         font-weight: 700;
         font-size: 2.5rem;
         color: #333;
     }
+    
     
     .paragraph-style {
         font-family: 'Inter', sans-serif;
