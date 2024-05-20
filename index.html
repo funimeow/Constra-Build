@@ -377,5 +377,32 @@
             window.location.href = "services.html";
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var navbar = document.querySelector('.navbar');
+            var navbarCollapse = document.querySelector('.navbar-collapse');
+        
+            navbarCollapse.addEventListener('show.bs.collapse', function () {
+                if (!navbar.classList.contains('scrolled')) {
+                    navbar.classList.add('scrolled');
+                }
+            });
+        
+            navbarCollapse.addEventListener('hide.bs.collapse', function () {
+                if (window.scrollY === 0) {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        
+            window.addEventListener('scroll', function() {
+                if (window.scrollY === 0) {
+                    navbar.classList.remove('scrolled');
+                } else {
+                    navbar.classList.add('scrolled');
+                }
+            });
+        });
+        
+    </script>
 </body>
 </html>
