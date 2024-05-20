@@ -388,10 +388,12 @@
                 }
             });
         
-            navbarCollapse.addEventListener('hide.bs.collapse', function () {
-                if (window.scrollY === 0) {
-                    navbar.classList.remove('scrolled');
-                }
+            navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+                setTimeout(function() {
+                    if (window.scrollY === 0) {
+                        navbar.classList.remove('scrolled');
+                    }
+                }, 100); // Adjust delay time (in milliseconds) as needed
             });
         
             window.addEventListener('scroll', function() {
