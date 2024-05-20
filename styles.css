@@ -351,7 +351,7 @@ body {
 }
 @media (max-width: 402px){
     .learn-more-button{
-        padding: 2px 25px !important;
+        padding: 4px 25px !important;
     }
 }
 @media (max-width: 600px){
