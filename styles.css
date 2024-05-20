@@ -349,6 +349,7 @@ body {
     padding-top: 80px;
 
 }
+
 @media (max-width: 402px){
     .learn-more-button{
         padding: 6px 25px !important;
