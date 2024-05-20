@@ -349,13 +349,6 @@ body {
     padding-top: 80px;
 
 }
-.blur-text {
-    filter: blur(3px);
-}
-
-.visible-text {
-    filter: blur(0px);
-}
 
 @media (max-width: 402px){
     .learn-more-button{
