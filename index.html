@@ -8,14 +8,18 @@
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/@botpoison/browser" async></script>
     <script src="script.js"></script>
    
 </head>
-<STYLE>
+<style>
     .navbar.scrolled .nav-item:nth-child(1) .nav-link {
         color:#000 !important; /* Adjust the opacity as needed */
     }
+
+    
 </style>
+
 <script>
     window.addEventListener('scroll', function() {
         var navbar = document.querySelector('.navbar');
@@ -30,7 +34,7 @@
 <body>
 
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fade-in">
     <div class="position-absolute top-0 start-0">
         <a href="#">
             <img id="navbar-brand" style="max-width:190px; max-height:140px;  margin-top:0px; margin-left:4px" class="navbar-brand-width" src="images/logo-white.png" alt="Logo">
@@ -53,7 +57,7 @@
                 <a class="nav-link customlinka medium-text text-white text-center" href="contact.html">Services</a>
             </li>  
             <li class="nav-item">
-                <a class="nav-link customlinka medium-text text-white text-center" href="portfolio.html">Portfolio</a>
+                <a class="nav-link customlinka medium-text text-white text-center" href="portfolio.html">Projects</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link customlinka medium-text text-white text-center" href="index.html#contact">Contact Us</a>
@@ -64,7 +68,7 @@
 
     <!-- Phone number and email -->
     <div class="d-none d-lg-block position-absolute top-0 end-0 mt-2 me-3 text-white" id="contactInfo">
-        <span class="regular-text customscrolledinfo" style="font-size: 12px; margin-bottom:10px;"><i class="fas fa-phone-alt"></i> +961 03 54 14 19</span><br>
+        <span class="regular-text customscrolledinfo" style="font-size: 12px; margin-bottom:10px;"><i class="fas fa-phone-alt"></i> +961 03 54 14 18</span><br>
         <span class="regular-text customscrolledinfo" style="font-size: 12px;"><i class="far fa-envelope"></i> info@constra-build.com</span>
     </div>
     
@@ -94,7 +98,7 @@
         }
     });
   </script>
-    <header style="height:100vh" id="home" class="container-fluid custom-bg-gray text-dark position-relative">
+    <header style="height:100vh" id="home" class="container-fluid custom-bg-gray text-dark position-relative fade-in">
         <video autoplay="" loop="" muted="" playsinline="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" id="bg-video">
             <source src="images/video.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -138,7 +142,7 @@
                     <button id="learn-more-button" class="btn btn-primary learn-more-button">
                         <span class="button-text">Learn More</span>
                     </button>
-                    <button style="margin-left:10px" id="learn-more-button" class="btn btn-primary learn-more-button">
+                    <button style="margin-left:10px" id="learn-more-button2" class="btn btn-primary learn-more-button">
                         <span class="button-text">Our Services</span>
                     </button>
                 </div>
@@ -191,20 +195,21 @@
     <div class="containercustom">
       <div class="section-content">
         <h2 class="title-style custommarginno">Contact Us</h2>
-        <p class="paragraph-style">Got questions or feedback? Feel free to reach out to us using the contact form below. (May take 30 seconds to load)</p>
+        <p class="paragraph-style">Got questions or feedback? Feel free to reach out to us using the contact form below.</p>
         <!-- Contact Form -->
-        <form id="contact-form" class="contact-form" action="https://formsubmit.co/f6bf5ddf620becf4117acad180fb0b96" method="POST">
-          <div class="form-group">
-            <input id="nameform" type="text" name="name" class="form-control" placeholder="Your Name" required>
+        <form id="contact-form" class="contact-form" action="https://submit-form.com/Fr4Lz4fEX"
+        data-botpoison-public-key="pk_9d880b37-f964-42df-9490-2c464f9aa974"
+      >          <div class="form-group">
+            <input id="nameform" type="text" name="Name" class="form-control" placeholder="Your Name" required>
           </div>
           <div class="form-group">
-            <input id="emailform" type="email" name="email" class="form-control" placeholder="Your Email" required>
+            <input id="emailform" type="email" name="Email" class="form-control" placeholder="Your Email" required>
           </div>
           <div class="form-group">
-            <input id="subjectform" type="text" name="subject" class="form-control" placeholder="Subject" required>
+            <input id="subjectform" type="text" name="Subject" class="form-control" placeholder="Subject" required>
           </div>
           <div class="form-group">
-            <textarea id="messageform" name="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
+            <textarea id="messageform" name="Message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
           </div>
           <button id="submitbutton" type="submit" class="btn-style">Send Message</button>
         </form>
@@ -349,12 +354,7 @@
         });
         
     </script>
-    <script>
-        window.addEventListener('DOMContentLoaded', function() {
-            let video = document.getElementById('bg-video');
-            video.play();
-        });
-    </script>
+
     <script src="script.js"></script>
     
 </body>

@@ -12,9 +12,11 @@ document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
 });
 
 document.getElementById("learn-more-button").addEventListener("click", function() {
+    window.location.href = "about.html";
+});
+document.getElementById("learn-more-button2").addEventListener("click", function() {
     window.location.href = "services.html";
 });
-
 window.onload = function() {
     var userAgent = navigator.userAgent.toLowerCase();
     var isChrome = /chrome/.test(userAgent);

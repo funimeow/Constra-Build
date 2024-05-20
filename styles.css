@@ -351,7 +351,7 @@ body {
 }
 @media (max-width: 402px){
     .learn-more-button{
-        padding: 2px 30px !important;
+        padding: 2px 25px !important;
     }
 }
 @media (max-width: 600px){
@@ -964,7 +964,7 @@ html {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 1rem;
-    padding: 12px 30px;
+    padding: 9px 25px;
     border-radius: 25px;
     background-color: #2e3756;
     color: #fff;
@@ -1130,7 +1130,7 @@ button#view-all-projects{
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 1rem;
-    padding: 12px 30px;
+    padding: 9px 25px;
     border-radius: 25px;
     background-color: #2e3756;
     color: #fff;
