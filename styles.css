@@ -350,21 +350,19 @@ body {
 
 }
 
-@media (max-width: 402px){
-    .learn-more-button{
-        padding: 8px 25px !important;
-    }
-}
+
 @media (max-width: 600px){
     .learn-more-button2{
         padding: 11px 30px !important;
     }
 }
+
+
 .learn-more-button {
     display: block;
     
    
-    padding: 15px 30px;
+    padding: 11px 26px;
     border-radius: 50px;
     background-color: #fff;
     color: #333;
@@ -381,7 +379,7 @@ body {
     border-radius: 50px;
     background-color: #fff;
     color: #333;
-    font-size: 18px;
+    
     font-weight: bold;
     border: 2px solid #333;
     cursor: pointer;
@@ -391,6 +389,13 @@ body {
 }
 header .containercustom {
     padding-top: 60px;
+   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 0;
+    
 }
 .header h1 {
     font-size: 2.5em;
@@ -843,7 +848,7 @@ html {
 
   
     
-    #aboutus, #services, #careers, #contact {
+    #aboutus, #services, #projects, #contact {
     /* Match the height of the viewport */
        padding:5%;
         
@@ -865,7 +870,7 @@ html {
         }
     }
     @media (max-width: 768px) {
-        #careers, #contact, #services, #aboutus {
+        #projects, #contact, #services, #aboutus {
             border-radius: 0px !important;
     
         }
@@ -876,6 +881,7 @@ html {
         font-size: 2rem !important;
     }
 }
+
     .title-style {
         font-family: 'Inter', sans-serif;
         font-weight: 700;
@@ -887,7 +893,7 @@ html {
     .paragraph-style {
         font-family: 'Inter', sans-serif;
         font-weight: 500;
-        font-size: 1.1rem;
+
         color: #666;
         line-height: 1.8;
     }
@@ -1049,7 +1055,7 @@ html {
    /* Styles here */
 }
 
-#contact, #careers, #services, #aboutus {
+#contact, #projects, #services, #aboutus, #projects {
     background-color: #f8f9fa; /* Light gray background */
     border-radius: 15px;
     padding: 5%;
@@ -1064,7 +1070,7 @@ html {
 }
 
 
-#careers {
+#projects, #projects {
     background-color: #f8f9fa; /* Light gray background */
     border-radius: 15px;
     padding: 5%;
@@ -1088,6 +1094,8 @@ html {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
+    font-size: small !important;
+    
     margin-bottom: 20px;
     text-align: center;
     -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
@@ -1117,7 +1125,6 @@ p.project-text{
 .project-text {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    
     color: #666;
     line-height: 1.8;
     margin-bottom: 15px;
@@ -1158,11 +1165,24 @@ button#view-all-projects{
     background-color: #2e3756;
     border-color: #2e3756;
 }
-#careers .btn-primary {
+#projects .btn-primary {
     display: block;
     margin: 0 auto;
 }
+@media (max-width: 600px) {
+    .project-card {
+        font-size: 14px; /* Increased font size for readability on small screens */
+        padding: 10px !important;
+    }
+}
 
-#careers{
+.project-card p {
+    font-size: small;
+
+    line-height: 1.8; /* Adjusted line height for better spacing */
+    margin-bottom: 10px; /* Reduced margin to save space */
+}
+
+#projects{
     padding-bottom: 40px !important;
 }
