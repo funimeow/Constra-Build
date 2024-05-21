@@ -18,6 +18,10 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
+html{
+    height: 100%;
+    width: 100%;
+   }
 @font-face {
     font-family: 'Inter';
     font-style: normal;
@@ -135,7 +139,8 @@ body {
     overflow: overlay;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     position: relative;
     
     

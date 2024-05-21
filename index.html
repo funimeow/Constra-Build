@@ -46,8 +46,6 @@
     });
 </script>
 <body>
-
-<!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fade-in">
     <div class="position-absolute top-0 start-0">
         <a href="#">
@@ -57,8 +55,6 @@
     <button style="margin-right: 6px; " class="navbar-toggler custombuttonsize ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- New button for desktop screens -->
-    
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -78,9 +74,7 @@
             </li>  
         </ul>   
     </div>
-    <!-- Move the additional hamburger button to the right -->
-
-    <!-- Phone number and email -->
+  
     <div class="d-none d-lg-block position-absolute top-0 end-0 mt-2 me-3 text-white" id="contactInfo">
         <span class="regular-text customscrolledinfo" style="font-size: 12px; margin-bottom:10px;"><i class="fas fa-phone-alt"></i> +961 03 54 14 18</span><br>
         <span class="regular-text customscrolledinfo" style="font-size: 12px;"><i class="far fa-envelope"></i> info@constra-build.com</span>
@@ -88,19 +82,6 @@
     
     
 </nav>
-
-<!-- Sidebar for additional links -->
-
-
-
-
-
-    
-    
-    
-    
-    
-    
   <script>
     window.addEventListener('scroll', function() {
         var navbar = document.querySelector('.navbar');
@@ -125,19 +106,12 @@
                 <div class="container" style="max-width: 700px; padding-top:7px;">
                     <p style="word-wrap: break-word;" class="text-white slotholder-text mt-0 mb-0 fs-6 zoom-in paragraphmeow margincustomo regular-text plineheight">At ConstraBuild, we are dedicated to providing superior quality construction services and products since the 2000s.</p>
                 </div>
-                <a href="portfolio.html" class="btn btn-primary btn-lg mt-4 custom-btn">Explore Our Projects</a>
+                <a href="#projects" class="btn btn-primary btn-lg mt-4 custom-btn">Explore Our Projects</a>
             </div>
         </div>
     </div>
 </header>
-  
 
-  
-    
-    <!-- HTML -->
-<!-- HTML -->
-<!-- HTML -->
-<!-- HTML -->
 <section class="section-custom " id="aboutus">
     <div class="container customcont  pt-4">
         <div class="row">
@@ -207,7 +181,6 @@
       <div class="section-content">
         <h2 class="title-style custommarginno">Contact Us</h2>
         <p class="paragraph-style">Got questions or feedback? Feel free to reach out to us using the contact form below.</p>
-        <!-- Contact Form -->
         <form id="contact-form" class="contact-form" action="https://submit-form.com/Fr4Lz4fEX"
         data-botpoison-public-key="pk_9d880b37-f964-42df-9490-2c464f9aa974"
       >          <div class="form-group">
@@ -229,28 +202,9 @@
   </section>
   
 </script>
-
-  
-  
-  
-
-    
-    
-    
-    
-
-    <!-- Services Section with Fade-in Animation -->
-   
-   
-
-
-    
-    
-    
     <footer class="footer footercustom">
         <div class="container">
             <div class="row">
-                <!-- Quick Links -->
                 <div class="col-md-4 mt-4 quick-links">
                     <h5> Quick Links</h5>
                     
@@ -261,7 +215,6 @@
                         <p><a class="regular-text" href="contact.html"> Contact Us</a></p>
                     
                 </div>
-                <!-- Contact Info -->
                 <div class="col-md-4 mt-4 quick-links">
 
                     <h5> Contact Info</h5>
@@ -271,7 +224,6 @@
                     <p> <a class="regular-text" href="mailto:info@constra-build.com">Email: info@constra-build.com</a></p>
                     <p> <a class="regular-text" href="tel:+96103541418">Phone: +961 03 54 14 18</a></p>
                 </div>
-                <!-- Business Hours -->
                 <div class="col-md-4 mt-4 quick-links">
                     <h5> Business Hours</h5>
                     <p><a " class="regular-text text-gray"> Monday - Friday: 9:00 AM - 4:00 PM</a></p>
@@ -303,9 +255,6 @@
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
-       
-        
-        // Add fade-in animation when element comes into view
         document.addEventListener('DOMContentLoaded', () => {
             const fadeElements = document.querySelectorAll('.fade-in');
 
@@ -331,26 +280,22 @@
         
             if (window.scrollY > 0) {
                 navbar.classList.add('scrolled');
-                logo.src = 'images/logo.png'; // Change to the white logo image
+                logo.src = 'images/logo.png'; 
                 
                 otherLinks.forEach(link => {
                     link.classList.remove('text-white');
                     link.classList.add('text-gray');
                 });
-        
-                // Ensure the "Home" link stays white
                 homeLink.classList.remove('text-gray');
                 homeLink.classList.add('text-white-custom');
             } else {
                 navbar.classList.remove('scrolled');
-                logo.src = 'images/logo-white.png'; // Change to the original logo image
+                logo.src = 'images/logo-white.png'; 
                
                 otherLinks.forEach(link => {
                     link.classList.remove('text-gray');
                     link.classList.add('text-white');
                 });
-        
-                // Ensure the "Home" link stays white
                 homeLink.classList.remove('text-gray');
                 homeLink.classList.add('text-white-custom');
             }
@@ -391,7 +336,7 @@
                     if (window.scrollY === 0) {
                         navbar.classList.remove('scrolled');
                     }
-                }, 60); // Adjust delay time (in milliseconds) as needed
+                }, 60); 
             });
         
             window.addEventListener('scroll', function() {
