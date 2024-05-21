@@ -18,6 +18,12 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
 html{
     height: 100%;
     width: 100%;
@@ -186,8 +192,8 @@ body {
 }
 .navbar {
     background-color: transparent !important;
+    --bs-navbar-toggler-border-color: none;
 }
-
 
 
 .titol{
