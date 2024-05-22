@@ -408,6 +408,11 @@ header .containercustom {
         padding: 0;
     
 }
+
+/* Adjusting the padding and margin for the aboutus section */
+
+
+
 .header h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -856,10 +861,16 @@ html {
         
         
     }
-
-  
+    #servicescontact{
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+  #services, #aboutus, #servicescontact{
+    display:grid;
+    padding-left: 8% !important;
+  }
     
-    #aboutus, #services, #projects, #contact {
+    #aboutus, #services, #projects, #contact, #servicescontact{
     /* Match the height of the viewport */
        padding:5%;
         
@@ -881,11 +892,18 @@ html {
         }
     }
     @media (max-width: 768px) {
-        #projects, #contact, #services, #aboutus {
+        #projects, #contact, #services, #aboutus, #servicescontact {
             border-radius: 0px !important;
     
         }
         
+    }
+    .servicescustombtn .learn-more-button{
+        background-color: #eeeeee;
+    }
+    .servicescustombtn .learn-more-button:hover{
+        background-color: 
+        #47537d;
     }
     @media (max-width: 600px) {
     .title-style{
@@ -1066,7 +1084,7 @@ html {
    /* Styles here */
 }
 
-#contact, #projects, #services, #aboutus, #projects {
+#contact, #projects, #services, #aboutus, #projects, #servicescontact {
     background-color: #f8f9fa; /* Light gray background */
     border-radius: 15px;
     padding: 5%;

@@ -55,10 +55,7 @@
         background-image: url(
             "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
-    .navbar-toggler.collapsed .navbar-toggler-icon {
-        background-image: url(
-            "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 4l24 24M4 28L28 4'/%3E%3C/svg%3E");
-    }
+
 </style>
 
 
@@ -98,17 +95,7 @@
             <span class="regular-text customscrolledinfo" style="font-size: 12px;"><i class="far fa-envelope"></i> info@constra-build.com</span>
         </div>
     </nav>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var toggler = document.querySelector('.navbar-toggler');
-            var navbar = document.querySelector('.navbar');
-    
-            toggler.addEventListener('click', function() {
-                toggler.classList.toggle('collapsed');
-             
-            });
-        });
-    </script>
+   
   <script>
     window.addEventListener('scroll', function() {
         var navbar = document.querySelector('.navbar');
