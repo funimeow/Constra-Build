@@ -866,10 +866,7 @@ html {
         border-bottom-right-radius: 0 !important;
         border-bottom-left-radius: 0 !important;
     }
-  #services, #aboutus, #servicescontact{
-    
-    padding-left: 8% !important;
-  }
+ 
     
     #aboutus, #services, #projects, #contact, #servicescontact{
     /* Match the height of the viewport */
