@@ -141,6 +141,7 @@ html{
 
 body {
     margin: 0;
+    
     font-size: 100%;
     overflow: overlay;
     background-size: cover;
@@ -866,13 +867,13 @@ html {
         border-bottom-left-radius: 0 !important;
     }
   #services, #aboutus, #servicescontact{
-    display:grid;
+    
     padding-left: 8% !important;
   }
     
     #aboutus, #services, #projects, #contact, #servicescontact{
     /* Match the height of the viewport */
-       padding:5%;
+       padding:1rem;
         
         -webkit-box-align: left;
         
@@ -915,22 +916,20 @@ html {
 
 /* General styles */
 .read-more-button {
-    background-color: transparent;
-    color: black  !important ;
-    border-color: #000 !important;
+    display: block;
+    margin-top: 100px;
    
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 11px 26px;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #333;
+   
+    font-weight: bold;
+    border: 2px solid #333;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    border-radius: 5px;
 }
 
-.read-more-button:hover {
-    background-color: #000;
-    color: white !important;
-    transform: scale(1.05);
-}
+
 
 #more-content {
     opacity: 0;
@@ -957,10 +956,11 @@ html {
     }
 
     .read-more-button {
-        font-size: 0.875rem;
-        padding: 8px 16px;
+        font-size: 1rem;
+        padding: 7px 15px;
     }
 }
+
 
 @media (max-width: 576px) {
   
@@ -974,8 +974,8 @@ html {
     }
 
     .read-more-button {
-        font-size: 0.75rem;
-        padding: 6px 12px;
+        font-size: 1rem;
+        padding: 7px 15px;
     }
 }
 
@@ -1155,7 +1155,7 @@ html {
 #contact, #projects, #services, #aboutus, #projects, #servicescontact {
     background-color: #f8f9fa; /* Light gray background */
     border-radius: 15px;
-    padding: 5%;
+    padding: 1rem;
 
     -webkit-box-align: left;
         -ms-flex-align: left;
@@ -1167,10 +1167,10 @@ html {
 }
 
 
-#projects, #projects {
+#projects, #aboutus, #contact {
     background-color: #f8f9fa; /* Light gray background */
     border-radius: 15px;
-    padding: 5%;
+    padding: 50px;
     border-top: 1px solid #ccc; /* Add a small line above the section */
 
 }
