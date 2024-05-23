@@ -1167,7 +1167,8 @@ html {
 #projects, #aboutus, #contact {
     background-color: #f8f9fa; /* Light gray background */
     border-radius: 15px;
-    padding: 50px;
+    padding: 5%;
+    padding-top: 50px !important;
     border-top: 1px solid #ccc; /* Add a small line above the section */
 
 }
