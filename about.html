@@ -16,7 +16,7 @@
   
 </head>
 <style>
-    @media (max-width: 600px){
+    @media (max-width: 768px){
         .fs-6{
             font-size:90% !important;
         }
@@ -97,35 +97,38 @@
             <div class="col-lg-10 fade-in">
                 <h3 class="display-6 fs-1 title-fade-in custom-titles text-black titol bold-text">About Us</h3>
                 <div class="container" style="padding-top:9px; padding-left:2.5px">
-                    <p style="word-wrap: break-word; margin-left: 0px; padding-left:0px" class="text-black mt-0 mb-0 fs-6 zoom-in paragraphmeow margincustomo regular-text plineheight customfontsizemeow">
+                    <p class="text-black mt-0 mb-0 fs-6 zoom-in paragraphmeow margincustomo regular-text plineheight customfontsizemeow">
+
                         Founded in 2005 in Lebanon, ConstraBuild has been at the forefront of the construction industry, where commitment meets excellence. As a seasoned General Contractor and Construction Manager, we specialize in turnkey solutions for high-tech buildings and offer meticulous constructibility reviews for discerning Owners and Architects. Our dedication to delivering excellence in every project has established us as pioneers in the industry.
-                    </p>
-                    <p style="word-wrap: break-word; margin-left: 0px; padding-left:0px" class="text-black mt-3 mb-0 fs-6 zoom-in paragraphmeow margincustomo regular-text plineheight customfontsizemeow">
-                        Our journey has been defined by an unwavering dedication to two core principles:
-                    </p>
-                    <ul style="word-wrap: break-word; margin-left: 0px; padding-left:20px" class="text-black mt-0 mb-0 fs-6 zoom-in paragraphmeow margincustomo regular-text plineheight customfontsizemeow">
-                        <li>Delivering unparalleled quality in construction services and products.</li>
-                        <li>Meticulously managing projects to ensure they are completed on time and within budget constraints.</li>
-                    </ul>
-                    <p style="word-wrap: break-word; margin-left: 0px; padding-left:0px" class="text-black mt-3 mb-0 fs-6 zoom-in paragraphmeow margincustomo regular-text plineheight customfontsizemeow">
-                        At ConstraBuild, our commitment extends beyond constructing buildings; we foster trust, ensure reliability, and cultivate enduring relationships with our clients.
-                    </p>
-                    <p style="word-wrap: break-word; margin-left: 0px; padding-left:0px" class="text-black mt-3 mb-0 fs-6 zoom-in paragraphmeow margincustomo regular-text plineheight customfontsizemeow">
-                        With a track record of performance and a commitment to innovation, we stand ready to turn your vision into reality, one project at a time.
-                    </p>
-                    <h4 class="title-fade-in text-black medium-text" style="margin-bottom:15px; margin-top:15px;">
-                        <strong>Our Leadership</strong>
-                    </h4>
-                    <p style="word-wrap: break-word; margin-left: 0px; padding-left:0px" class="text-black mt-3 mb-0 fs-6 zoom-in paragraphmeow margincustomo regular-text plineheight customfontsizemeow">
-                        Under the visionary leadership of our Founder and CEO, <a href="https://www.linkedin.com/in/nibal-jawhar-0ba4b329/" target="_blank">Nibal Jawhar</a>, ConstraBuild has built a sound reputation for performance and commitment to excellence.
-                    </p>
+                                        </p>
+                    <div id="more-content" style="display: none;">
+                        <p class="text-black mt-3 mb-0 fs-6 zoom-in paragraphmeow margincustomo regular-text plineheight customfontsizemeow">
+                            Our journey has been defined by an unwavering dedication to two core principles:
+                        </p>
+                        <ul class="text-black mt-0 mb-0 fs-6 zoom-in paragraphmeow margincustomo regular-text plineheight customfontsizemeow">
+                            <li>Delivering unparalleled quality in construction services and products.</li>
+                            <li>Meticulously managing projects to ensure they are completed on time and within budget constraints.</li>
+                        </ul>
+                        <p class="text-black mt-3 mb-0 fs-6 zoom-in paragraphmeow margincustomo regular-text plineheight customfontsizemeow">
+                            At ConstraBuild, our commitment extends beyond constructing buildings; we foster trust, ensure reliability, and cultivate enduring relationships with our clients.
+                        </p>
+                        <p class="text-black mt-3 mb-0 fs-6 zoom-in paragraphmeow margincustomo regular-text plineheight customfontsizemeow">
+                            With a track record of performance and a commitment to innovation, we stand ready to turn your vision into reality, one project at a time.
+                        </p>
+                        <h4 class="mt-4 text-black">Our Leadership</h4>
+                        <p class="text-black mt-3 mb-0 fs-6 zoom-in paragraphmeow margincustomo regular-text plineheight customfontsizemeow">
+                            Under the visionary leadership of our Founder and CEO, <a href="https://www.linkedin.com/in/nibal-jawhar-0ba4b329/" target="_blank">Nibal Jawhar</a> , ConstraBuild has built a sound reputation for performance and commitment to excellence.
+                    
+                        </p>
+                    </div>
+                    <button id="read-more-button" class="btn btn-primary read-more-button mt-3">Read More</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Image placed in the bottom right -->
-    <img  src="images/littleicon.png" alt="ConstraBuild" class="position-absolute imagebottom" style="bottom: 0; right: 0; width: 35% ; height: auto; opacity:0.6;">
+    <img src="images/littleicon.png" alt="ConstraBuild" class="position-absolute imagebottom" style="bottom: 0; right: 0; width: 35%; height: auto; opacity:0.6;">
 </header>
+
 
 
 <section stylclass="section-custom " id="services">
@@ -233,6 +236,27 @@
         document.getElementById("learn-more-button").addEventListener("click", function() {
             window.location.href = "services.html";
         });
+    </script>
+    <script>
+        // script.js
+
+document.getElementById("read-more-button").addEventListener("click", function() {
+    var moreContent = document.getElementById("more-content");
+    if (moreContent.style.display === "none" || !moreContent.style.display) {
+        moreContent.style.display = "block";
+        setTimeout(function() {
+            moreContent.classList.add("show");
+        }, 10); // Adding a small delay to ensure transition works
+        this.textContent = "Read Less";
+    } else {
+        moreContent.classList.remove("show");
+        setTimeout(function() {
+            moreContent.style.display = "none";
+        }, 500); // Matches the CSS transition duration
+        this.textContent = "Read More";
+    }
+});
+
     </script>
 
    

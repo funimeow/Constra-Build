@@ -898,6 +898,7 @@ html {
         }
         
     }
+    
     .servicescustombtn .learn-more-button{
         background-color: #eeeeee;
     }
@@ -908,6 +909,73 @@ html {
     @media (max-width: 600px) {
     .title-style{
         font-size: 2rem !important;
+    }
+}
+/* styles.css */
+
+/* General styles */
+.read-more-button {
+    background-color: transparent;
+    color: black  !important ;
+    border-color: #000 !important;
+   
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.read-more-button:hover {
+    background-color: #000;
+    color: white !important;
+    transform: scale(1.05);
+}
+
+#more-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+#more-content.show {
+    opacity: 1;
+    max-height: 2000px; /* Adjust as needed */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    
+
+    .titol {
+        font-size: 1.5rem;
+    }
+
+    .paragraphmeow {
+        font-size: 0.875rem;
+    }
+
+    .read-more-button {
+        font-size: 0.875rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 576px) {
+  
+
+    .titol {
+        font-size: 1.25rem;
+    }
+
+    .paragraphmeow {
+        font-size: 0.75rem;
+    }
+
+    .read-more-button {
+        font-size: 0.75rem;
+        padding: 6px 12px;
     }
 }
 
