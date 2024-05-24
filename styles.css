@@ -870,7 +870,7 @@ html {
     
     #aboutus, #services, #projects, #contact, #servicescontact{
     /* Match the height of the viewport */
-       padding:90px !important;
+       padding:5% !important;
        padding-bottom: 90px !important;
         
         -webkit-box-align: left;
