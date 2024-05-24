@@ -363,9 +363,9 @@ body {
 }
 
 
-@media (max-width: 600px){
-    .learn-more-button2{
-        padding: 11px 30px !important;
+@media (max-width: 360px){
+    .learn-more-button2, .learn-more-button{
+        padding: 11px 18px !important;
     }
 }
 
@@ -374,7 +374,7 @@ body {
     display: block;
     
    
-    padding: 11px 26px;
+    padding: 14px 30px;
     border-radius: 50px;
     background-color: #fff;
     color: #333;
@@ -870,7 +870,8 @@ html {
     
     #aboutus, #services, #projects, #contact, #servicescontact{
     /* Match the height of the viewport */
-       padding:1rem;
+       padding:90px !important;
+       padding-bottom: 90px !important;
         
         -webkit-box-align: left;
         
@@ -918,7 +919,7 @@ html {
    
     padding: 11px 26px;
     border-radius: 50px;
-    background-color: #fff;
+    background-color: transparent;
     color: #333;
    
     font-weight: bold;
@@ -1152,7 +1153,7 @@ html {
 #contact, #projects, #services, #aboutus, #projects, #servicescontact {
     background-color: #f8f9fa; /* Light gray background */
     border-radius: 15px;
-    padding: 1rem;
+    padding: 100px;
 
     -webkit-box-align: left;
         -ms-flex-align: left;
@@ -1168,6 +1169,7 @@ html {
     background-color: #f8f9fa; /* Light gray background */
     border-radius: 15px;
     padding: 5%;
+    padding-bottom: 30px;
     padding-top: 50px !important;
     border-top: 1px solid #ccc; /* Add a small line above the section */
 
