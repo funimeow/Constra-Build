@@ -5,24 +5,13 @@
 * Browsers: last 4 version
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
     outline: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 html{
     height: 100%;
@@ -402,9 +391,17 @@ body {
 header .containercustom {
     padding-top: 60px;
    
+        display: -webkit-box;
+   
+        display: -ms-flexbox;
+   
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         height: 100%;
         padding: 0;
     
@@ -512,6 +509,8 @@ border-top-left-radius: 20px;
 }
 .fade-in {
     opacity: 0;
+    -webkit-transition: opacity 0.25s ease;
+    -o-transition: opacity 0.25s ease;
     transition: opacity 0.25s ease;
 }
 
@@ -933,6 +932,8 @@ html {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
+    -webkit-transition: opacity 0.5s ease, max-height 0.5s ease;
+    -o-transition: opacity 0.5s ease, max-height 0.5s ease;
     transition: opacity 0.5s ease, max-height 0.5s ease;
 }
 

@@ -9,6 +9,7 @@
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/@botpoison/browser" async></script>
     <script src="script.js"></script>
    
@@ -285,6 +286,7 @@
             });
         });
     </script>
+    
     <script>
         window.addEventListener('scroll', function() {
             var navbar = document.querySelector('.navbar');
@@ -360,6 +362,16 @@
                     navbar.classList.add('scrolled');
                 }
             });
+        });
+        
+    </script>
+    <script>
+        $(document).on('click', function (e) {
+            // Check if the click event originated from inside the navbar or not
+            if (!$(e.target).closest('.navbar').length) {
+                // If the click is outside the navbar, collapse it
+                $('.navbar-collapse').collapse('hide');
+            }
         });
         
     </script>
