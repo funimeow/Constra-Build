@@ -363,9 +363,9 @@ body {
 }
 
 
-@media (max-width: 360px){
+@media (max-width: 768px){
     .learn-more-button2, .learn-more-button{
-        padding: 11px 18px !important;
+        padding: 8px 16px !important;
     }
 }
 
@@ -905,7 +905,7 @@ html {
         background-color: 
         #47537d;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
     .title-style{
         font-size: 2rem !important;
     }
