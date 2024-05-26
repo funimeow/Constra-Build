@@ -427,12 +427,7 @@ header .containercustom {
 }
 
 
-@media (max-width: 600px) {
-    .project-card {
-        font-size: 13.5px;
-        padding: 10px !important;
-    }
-}
+
 
 .footer {
     font-size: 80%;
