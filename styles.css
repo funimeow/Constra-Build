@@ -1058,36 +1058,7 @@ html {
         --bs-btn-disabled-border-color: #47537d !important;
     }
 /* Button Styles */
-.custom-btn {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    padding: 9px 25px;
-    border-radius: 25px;
-    background-color: #2e3756;
-    color: #fff;
-    border: 2px solid #2e3756;
-    -webkit-transition: background-color 0.3s, color 0.3s;
-    -o-transition: background-color 0.3s, color 0.3s;
-    transition: background-color 0.3s, color 0.3s;
-    text-decoration: none;
-}
 
-.custom-btn:hover {
-    background-color: #34415e; /* Adjust hover background color as needed */
-    color: #fff;
-}
-
-.custom-btn:focus {
-    outline: none;
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(71, 83, 125, 0.5);
-            box-shadow: 0 0 0 0.2rem rgba(71, 83, 125, 0.5);
-}
-
-.custom-btn:active {
-    background-color: #2e3756;
-    border-color: #2e3756;
-}
 
 .contact-form .form-group {
     margin-bottom: 20px;
@@ -1230,34 +1201,34 @@ button#view-all-projects{
 .custom-btn {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 1rem;
-    padding: 9px 25px;
+    font-size: 1.1rem; /* Increase font size */
+    padding: 10px 30px; /* Increase padding */
     border-radius: 25px;
-    background-color: #2e3756;
+    background-color: rgba(0, 0, 0, 0.5); /* Darken background color */
     color: #fff;
-    border: 2px solid #2e3756;
-    -webkit-transition: background-color 0.3s, color 0.3s;
-    -o-transition: background-color 0.3s, color 0.3s;
-    transition: background-color 0.3s, color 0.3s;
-    text-decoration: none;
-    display: inline-block;
+    border: none; /* Remove border */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Add box shadow */
 }
 
 .custom-btn:hover {
-    background-color: #34415e; /* Adjust hover background color as needed */
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.9); /* Darken hover background color */
 }
 
 .custom-btn:focus {
     outline: none;
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(71, 83, 125, 0.5);
-            box-shadow: 0 0 0 0.2rem rgba(71, 83, 125, 0.5);
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .custom-btn:active {
-    background-color: #2e3756;
-    border-color: #2e3756;
+    background-color: rgba(0, 0, 0, 0.9); /* Darken active background color */
 }
+
 #projects .btn-primary {
     display: block;
     margin: 0 auto;
