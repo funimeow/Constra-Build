@@ -311,6 +311,39 @@ body {
 
 
 
+/* Back to Top Button */
+.back-to-top-btn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 16px;
+    transition: opacity 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top-btn i {
+    font-size: 20px;
+}
+
+/* Hover and focus effects for non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+    .back-to-top-btn:hover, .back-to-top-btn:focus {
+        background-color: #ddd;
+    }
+
+    .back-to-top-btn:focus {
+        outline: none;
+    }
+}
 /* Apply rounded corners to specific sections */
 .custom-bg-gray.custom-rounded {
     border-radius: 20px; /* Adjust the value to change the roundness of corners */

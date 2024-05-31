@@ -50,3 +50,25 @@ window.onload = function() {
     }
 };
 
+// Function to scroll to top
+function scrollToTop() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+// Function to toggle the visibility of the back to top button
+function toggleBackToTopBtn() {
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    if (window.scrollY > 100) { // Show the button after scrolling down 100px
+        backToTopBtn.style.display = 'block';
+    } else {
+        backToTopBtn.style.display = 'none';
+    }
+}
+
+// Event listeners
+window.addEventListener('scroll', toggleBackToTopBtn);
+document.getElementById('backToTopBtn').addEventListener('click', function() {
+    scrollToTop();
+    this.blur(); // Remove focus after clicking
+    this.classList.remove('back-to-top-btn:focus'); // Ensure focus style is removed
+});
