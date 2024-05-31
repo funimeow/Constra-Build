@@ -44,7 +44,7 @@
     }
 </style>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fade-in">
+    <nav class="navbar scrolled navbar-expand-lg navbar-light bg-light fade-in">
         <div class="position-absolute top-0 start-0">
             <a href="index.html">
                 <img id="navbar-brand" style="max-width:190px; max-height:140px; margin-top:0px; margin-left:4px" class="navbar-brand-width" src="images/logo-white.png" alt="Logo">
@@ -91,7 +91,7 @@
         z-index: 1; /* Ensure the overlay is above the background image */
     }
 </style>
-    <header style="height:80vh" id="home" class="container-fluid custom-bg-gray text-dark position-relative fade-in">
+   <!--<header style="height:80vh" id="home" class="container-fluid custom-bg-gray text-dark position-relative fade-in">
         <video autoplay="" loop="" muted="" playsinline="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" id="bg-video">
             <source src="images/servicesvideo.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -109,7 +109,7 @@
             </div>
         </div>
     </header>
-</header>
+</header>-->
 
 
 <style>
@@ -165,7 +165,7 @@
     }
 </style>
 <section id="services" class="service-section fade-in">
-    <div class="container">
+    <div style="padding-top:20px" class="container">
         <h2 class="text-center mb-5 custom-text-meow title-style title-fade-in">Discover What We Offer</h2>
         <div class="row">
             <div class="col-xl-4">
@@ -345,60 +345,10 @@
                 }, 0); 
             });
     
-            window.addEventListener('scroll', function() {
-                if (window.scrollY === 0) {
-                    navbar.classList.remove('scrolled');
-                } else {
-                    navbar.classList.add('scrolled');
-                }
-            });
         });
     </script>
     
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const navbar = document.querySelector('.navbar');
-            const logo = document.getElementById('navbar-brand');
-            const homeLink = document.querySelector('.nav-link.customlinka:nth-child(3)');
-            const otherLinks = document.querySelectorAll('.nav-link.customlinka:not(:nth-child(3))');
-    
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 0) {
-                    navbar.classList.add('scrolled');
-                    if (logo) logo.src = 'images/logo.png';
-                    
-                    otherLinks.forEach(link => {
-                        link.classList.remove('text-white');
-                        link.classList.add('text-gray');
-                    });
-                    if (homeLink) {
-                        homeLink.classList.remove('text-gray');
-                        homeLink.classList.add('text-white-custom');
-                    }
-                } else {
-                    navbar.classList.remove('scrolled');
-                    if (logo) logo.src = 'images/logo-white.png';
-                   
-                    otherLinks.forEach(link => {
-                        link.classList.remove('text-gray');
-                        link.classList.add('text-white');
-                    });
-                    if (homeLink) {
-                        homeLink.classList.remove('text-gray');
-                        homeLink.classList.add('text-white-custom');
-                    }
-                }
-            });
-    
-            let navbarLinks = document.querySelectorAll('.navbar a');
-    
-            navbarLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    this.classList.add('no-hover');
-                });
-            });
-        });
-    </script>
+  
     
     </body>
         
