@@ -183,9 +183,16 @@ body {
 .navbar {
     background-color: transparent !important;
     --bs-navbar-toggler-border-color: none;
+
 }
 
-
+.navbar.fade-in, .customheaderhome.fade-in{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.navbar.fade-in.active, .customheaderhome.fade-in.active{
+    opacity: 1;
+}
 .titol{
     font-size: 80%;
 }
@@ -537,14 +544,15 @@ border-top-left-radius: 20px;
 }
 .fade-in {
     opacity: 0;
-    -webkit-transition: opacity 0.25s ease;
-    -o-transition: opacity 0.25s ease;
-    transition: opacity 0.25s ease;
+    transform: translateY(10px);
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fade-in.active {
     opacity: 1;
+    transform: translateY(0);
 }
+
 
 .btn-primary:hover {
     background-color: #47537d;

@@ -73,7 +73,7 @@
             </ul>   
         </div>
     
-        <div class="d-none d-lg-block position-absolute top-0 end-0 mt-2 me-3 text-white" id="contactInfo">
+        <div class="d-none d-lg-block position-absolute top-0 end-0 mt-2 me-3" id="contactInfo">
             <span class="regular-text customscrolledinfo" style="font-size: 12px; margin-bottom:10px;"><i class="fas fa-phone-alt"></i> +961 03 54 14 18</span><br>
             <span class="regular-text customscrolledinfo" style="font-size: 12px;"><i class="far fa-envelope"></i> info@constra-build.com</span>
         </div>
@@ -311,42 +311,9 @@
         
     </script>
     <script src="script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const navbar = document.querySelector('.navbar');
-            const contactInfo = document.getElementById('contactInfo');
+
     
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > navbar.offsetHeight) {
-                    contactInfo?.classList.remove('text-white');
-                } else {
-                    contactInfo?.classList.add('text-white');
-                }
-            });
-        });
-    </script>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const navbar = document.querySelector('.navbar');
-            const navbarCollapse = document.querySelector('.navbar-collapse');
-    
-            navbarCollapse?.addEventListener('show.bs.collapse', function () {
-                if (!navbar.classList.contains('scrolled')) {
-                    navbar.classList.add('scrolled');
-                }
-            });
-    
-            navbarCollapse?.addEventListener('hidden.bs.collapse', function () {
-                setTimeout(function() {
-                    if (window.scrollY === 0) {
-                        navbar.classList.remove('scrolled');
-                    }
-                }, 0); 
-            });
-    
-        });
-    </script>
+
     
   
     
