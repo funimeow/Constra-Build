@@ -17,24 +17,39 @@
   
 </head>
 <style>
-    @media (max-width: 768px){
-        .fs-6{
-            font-size:90% !important;
-        }
-        .sectionparagraph{
-            font-size:88% !important;
-        }
-        .custom-btn {
-            font-size: 0.9rem !important;
-        }
-        }
+    /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+#aboutus, #services, #projects, #contact, #servicescontact{
+    display: -ms-grid;
+    display: grid;
+}
+@media (max-width:550px){
+    .imagebottom{
+        width:57% !important;
+}
+}
+.navbar.scrolled .nav-item:nth-child(2) .nav-link {
+    color:#000 !important; /* Adjust the opacity as needed */
+}
+@media (max-width: 768px){
+    .fs-6{
+        font-size:90% !important;
+    }
+    .sectionparagraph{
+        font-size:88% !important;
+    }
+    .custom-btn {
+        font-size: 0.9rem !important;
+    }
+    }
    
 </style>
-<style>
-    .navbar.scrolled .nav-item:nth-child(2) .nav-link {
-        color:#000 !important; /* Adjust the opacity as needed */
-    }
-</style>
+
 <body>
     <nav class="navbar scrolled navbar-expand-lg navbar-light bg-light fade-in">
         <div class="position-absolute top-0 start-0">
@@ -78,13 +93,7 @@
     </nav>
         
 
-<style>
-    @media (max-width:550px){
-        .imagebottom{
-            width:57% !important;
-    }
-}
-</style>
+
 
 <header id="home" class="container-fluid custom-bg-gray text-dark position-relative fade-in">
     
@@ -123,11 +132,7 @@
     <img src="images/littleicon.png" alt="ConstraBuild" class="position-absolute imagebottom" style="bottom: 0; right: 0; width: 35%; height: auto; opacity:0.6;">
 </header>
 
-<style>
-    #aboutus, #services, #projects, #contact, #servicescontact{
-        display: grid;
-    }
-</style>
+
 <main>
 <section class="section-custom fade-in" id="services">
     <div class="container customcont  pt-4 ">

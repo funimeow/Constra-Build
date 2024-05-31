@@ -15,32 +15,46 @@
    
 </head>
 <style>
-    .navbar.scrolled .nav-item:nth-child(1) .nav-link {
-        color:#000 !important; /* Adjust the opacity as needed */
-    }
+   /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
+ .navbar-toggler-icon {
+    background-image: url(
+        "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+    }
+.navbar.scrolled .navbar-toggler-icon {
+    background-image: url(
+        "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar.scrolled .nav-item:nth-child(1) .nav-link {
+    color:#000 !important; /* Adjust the opacity as needed */
+}
+@media (max-width: 768px){
+    .fs-6{
+        font-size:90% !important;
+    }
+    .sectionparagraph{
+        font-size:88% !important;
+    }
+    .custom-btn {
+        font-size: 0.9rem !important;
+        
+    }
+    }
+@media (max-width: 400px){
+    .custom-btn{
+    font-size: 0.9rem !important;
+    padding: 10px 20px;
+    }
+}
     
 </style>
-<style>
-    @media (max-width: 768px){
-        .fs-6{
-            font-size:90% !important;
-        }
-        .sectionparagraph{
-            font-size:88% !important;
-        }
-        .custom-btn {
-            font-size: 0.9rem !important;
-            
-        }
-        }
-    @media (max-width: 400px){
-        .custom-btn{
-        font-size: 0.9rem !important;
-        padding: 10px 20px;
-        }
-    }
-</style>
+
 <script>
     window.addEventListener('scroll', function() {
         var navbar = document.querySelector('.navbar');
@@ -52,18 +66,7 @@
         }
     });
 </script>
-<style>
-    .navbar-toggler-icon {
-        background-image: url(
-            "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 
-        }
-    .navbar.scrolled .navbar-toggler-icon {
-        background-image: url(
-            "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-    }
-
-</style>
 
 
 <main>
